@@ -1,0 +1,146 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+body {
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 60px;
+	font-family:Cambria,'Palatino Linotype',Palatino,'Book Antiqua','URW Palladio L','ヒラギノ明朝 Pro W3','Hiragino Mincho Pro','メイリオ',Meiryo;
+	font-size:16px;
+	line-height:24px;
+	color:#333;
+	background-color:#FFF;
+}
+
+.cfont {
+	font-family: Cambria,'Palatino Linotype',Palatino,'Book Antiqua','URW Palladio L', 'Noto Serif SC', 'Kaiti SC', SimSun;
+}
+.menu {
+	position: fixed;
+	width: 800px;
+	height: 28px;
+	top: 0;
+	padding-top: 5px;
+	padding-bottom: 0px;
+	background-color:#FFF;
+	text-align: right;
+	z-index: 5;	
+}
+
+.topimage {
+	padding-top: 35px;
+	padding-bottom: 15px;
+}
+
+.photo {
+	width: 760px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.text {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.indent {
+	margin-left: 20px;	
+}
+
+.subtitle {
+	font-weight:bold;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	font-size:20px;
+	border-color:#333;
+	border-style:solid;
+	padding-left:10px;
+	border-width:0px 0px 0px 5px;
+}
+
+p {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+ul{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	
+}
+
+table {
+	width: 740px;
+	border: none;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+table td{
+	width: 370px;
+	height: 55px;
+	border: none;
+}
+
+.person{
+	position: relative;
+	width: 360px;
+	height: 45px;
+	margin: 5px;
+	padding: 10px;
+/*	background-color:#F0F0F0; */
+	background-image:url("person_bg.png");
+}
+
+.alumni{
+	position: relative;
+/*	width: 360px;*/
+	margin: 10px;
+	padding: 10px;
+}
+
+.person_k{
+	position: relative;
+	width: 360px;
+	height: 100px;
+	margin: 5px;
+	padding: 10px;
+/*	background-color:#F0F0F0; */
+	background-image:url("person_bg_blue.png");
+}
+
+.person_i{
+	position: relative;
+	width: 360px;
+	height: 100px;
+	margin: 5px;
+	padding: 10px;
+/*	background-color:#F0F0F0; */
+	background-image:url("person_bg_red.png");
+}
+
+.name{
+	font-weight: bold; 
+}
+
+.keywords{
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+}
+
+.phototext{
+	font-style: italic;
+	color: #333333;
+}
+a:link{color:#333;text-decoration:underline}
+a:visited{color:#333;text-decoration:underline}
+a:active{color:#333;text-decoration:none}
+a:hover{color:#333;text-decoration:none}
+a img{border-style:none;}
