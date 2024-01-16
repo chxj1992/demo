@@ -7,17 +7,25 @@
     <title>钟诚研究室</title>
     <link rel="shortcut icon" href="http://iwasakilab.k.u-tokyo.ac.jp/favicon.ico">
     <link href="./resources/style.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript">
-    </script>
-
     <style id="_goober">
+      div.content {
+        display: none;
+      }
+
+      table.resume-table td {
+        height: 40px;
+      }
+
 	 .go1475592160{height:0;}.go1671063245{height:auto;}.go1888806478{display:flex;flex-wrap:wrap;flex-grow:1;}@media (min-width:600px){.go1888806478{flex-grow:initial;min-width:288px;}}.go167266335{background-color:#313131;font-size:0.875rem;line-height:1.43;letter-spacing:0.01071em;color:#fff;align-items:center;padding:6px 16px;border-radius:4px;box-shadow:0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);}.go3162094071{padding-left:20px;}.go3844575157{background-color:#313131;}.go1725278324{background-color:#43a047;}.go3651055292{background-color:#d32f2f;}.go4215275574{background-color:#ff9800;}.go1930647212{background-color:#2196f3;}.go946087465{display:flex;align-items:center;padding:8px 0;}.go703367398{display:flex;align-items:center;margin-left:auto;padding-left:16px;margin-right:-8px;}.go3963613292{width:100%;position:relative;transform:translateX(0);top:0;right:0;bottom:0;left:0;min-width:288px;}.go1141946668{box-sizing:border-box;display:flex;max-height:100%;position:fixed;z-index:1400;height:auto;width:auto;transition:top 300ms ease 0ms,right 300ms ease 0ms,bottom 300ms ease 0ms,left 300ms ease 0ms,max-width 300ms ease 0ms;pointer-events:none;max-width:calc(100% - 40px);}.go1141946668 .notistack-CollapseWrapper{padding:6px 0px;transition:padding 300ms ease 0ms;}@media (max-width:599.95px){.go1141946668{width:100%;max-width:calc(100% - 32px);}}.go3868796639 .notistack-CollapseWrapper{padding:2px 0px;}.go3118922589{top:14px;flex-direction:column;}.go1453831412{bottom:14px;flex-direction:column-reverse;}.go4027089540{left:20px;}@media (min-width:600px){.go4027089540{align-items:flex-start;}}@media (max-width:599.95px){.go4027089540{left:16px;}}.go2989568495{right:20px;}@media (min-width:600px){.go2989568495{align-items:flex-end;}}@media (max-width:599.95px){.go2989568495{right:16px;}}.go4034260886{left:50%;transform:translateX(-50%);}@media (min-width:600px){.go4034260886{align-items:center;}}
+
+
+
     </style>
 </head>
 <body>
 
 <div id="top">
-    <div class="menu"><a href="#cn">主页</a> / <a
+    <div class="menu"><a href="#cn" onclick="clickContent(this, '#cn');">主页</a> / <a
             href="#achievement">成果</a> / <a
             href="#members">人员</a> / <a
             href="#facility">设施</a> / <a
@@ -27,14 +35,11 @@
     </div>
 </div>
 
-<br>
-
 <div id="cn" class="content">
     <div class="cfont">
 
         <div class="topimage"><a href="#"><img
-                src="./resources/topimage.png" width="800" height="300"
-                alt="./resourcesHeader Image"></a>
+                src="./resources/topimage.png" width="800"></a>
         </div>
 
         <div class="text">
@@ -56,7 +61,7 @@
             <p>请参阅我们课题组的<strong><a>完整新闻列表。</a></strong></p>
             <ul>
                 <li>2024.01.04 祝贺钟诚老师晋升为副研究员。</li>
-                <li>2024.10.27 钟诚老师受邀作为新进老师代表在西南石油大学工会发言。</li>
+                <li>2023.10.27 钟诚老师受邀作为新进老师代表在西南石油大学工会发言。</li>
                 <li>2023.10.10
                     课题组指导本科生团队（杜正杰等），油气污染土壤微生物生态组学及其原位生态修复应用，获得国家级大学生创新训练项目资助（202310615032）。
                 </li>
@@ -88,7 +93,7 @@
 
         <div class="text">
             <div class="subtitle"> 论文</div>
-            <p style="margin-left:15px;">请参阅我们的<strong><a>完整出版物列表。</a></strong>
+            <p style="margin-left:15px;">请参阅我们的<strong><a href="#papers" onclick="clickContent(this, '#papers');">完整出版物列表。</a></strong>
             </p>
             <p style="margin-left:15px;">精选论文包括：</p>
             <ul>
@@ -128,7 +133,7 @@
         <div class="text">
             <div class="subtitle">软件与数据库</div>
             <ul>
-                <li><strong>FPWAtlas<strong>（更新至2024.01.10）: 返排液采出水基因组数据库</li>
+                <li><strong>FPWAtlas</strong>（更新至2024.01.10）: 返排液采出水基因组数据库</li>
             </ul>
         </div>
 
@@ -162,7 +167,7 @@
                 </td>
                 <td valign="top">
                     <div class="person"><span class="name"> 钟 诚, Ph.D. </span> [<a
-                            href="#resume">个人简历</a>]<br>
+                            href="#resume" onclick="clickContent(this, '#resume');">个人简历</a>]<br>
                         副教授
                     </div>
                     <p>
@@ -252,7 +257,7 @@
             </tr>
             <tr>
                 <td>
-                    <img src="./resources/photo6.png" width="200" alt="">
+                    <img src="./resources/photo6.jpeg" width="200" alt="">
                 </td>
                 <td valign="top">
                     <div class="person"><span class="name"> 刘洲同（2023.01-2023.06）</span><br>
@@ -323,7 +328,10 @@
 
         <div id="activity" class="text">
             <div class="subtitle"> 校园活动</div>
-            <p>请浏览<strong><a>更多影像资料。</a></strong></p>
+            <p>
+                请浏览<strong><a href="#activities"
+                                 onclick="clickContent(this, '#activities');">更多影像资料。</a></strong>
+            </p>
             <br>
             <p>
                 2023.12.24 圣诞聚餐
@@ -396,7 +404,8 @@
             <p>姓名A-Z</p>
             <ul>
                 <li>
-                    <a target="_blank" href="http://edu.ihb.cas.cn/ds/bsds/202103/t20210304_627617.html">陈联国</a> 研究员（海外高层次人才），中科院水生所，武汉
+                    <a target="_blank" href="http://edu.ihb.cas.cn/ds/bsds/202103/t20210304_627617.html">陈联国</a>
+                    研究员（海外高层次人才），中科院水生所，武汉
                 </li>
                 <li>
                     <a target="_blank" href="https://grzy.cug.edu.cn/dongtian/zh_CN/index.htm">董田</a> 教授，中国地质大学（武汉），武汉
@@ -405,25 +414,31 @@
                     <a href="">Daniel C.W. Tsang</a> 教授, 香港科技大学，香港
                 </li>
                 <li>
-                    <a target="_blank" href="https://apps.ualberta.ca/directory/person/alessi">Daniel S. Alessi</a> 教授 （青年院士）, 阿尔伯塔大学，加拿大
+                    <a target="_blank" href="https://apps.ualberta.ca/directory/person/alessi">Daniel S. Alessi</a> 教授
+                    （青年院士）, 阿尔伯塔大学，加拿大
                 </li>
                 <li>
-                    <a target="_blank" href="https://apps.ualberta.ca/directory/person/ggoss">Greg G. Goss</a> 教授, 阿尔伯塔大学，加拿大
+                    <a target="_blank" href="https://apps.ualberta.ca/directory/person/ggoss">Greg G. Goss</a> 教授,
+                    阿尔伯塔大学，加拿大
                 </li>
                 <li>
-                    <a target="_blank" href="https://www.env.tsinghua.edu.cn/info/1263/6916.htm">侯德义</a> 教授（国家杰出青年），清华大学，北京
+                    <a target="_blank" href="https://www.env.tsinghua.edu.cn/info/1263/6916.htm">侯德义</a>
+                    教授（国家杰出青年），清华大学，北京
                 </li>
                 <li>
-                    <a target="_blank" href="https://www.cityu.edu.hk/see/people/prof-yuhe-henry-he">何宇鹤</a> 副教授，香港城市大学，香港
+                    <a target="_blank" href="https://www.cityu.edu.hk/see/people/prof-yuhe-henry-he">何宇鹤</a>
+                    副教授，香港城市大学，香港
                 </li>
                 <li>
-                    <a target="_blank" href="http://iwasakilab.k.u-tokyo.ac.jp/iwasaki/">Iwasaki Wataru</a> 教授, 东京大学，日本
+                    <a target="_blank" href="http://iwasakilab.k.u-tokyo.ac.jp/iwasaki/">Iwasaki Wataru</a> 教授,
+                    东京大学，日本
                 </li>
                 <li>
                     <a target="_blank" href="https://business.gwu.edu/joel-gehman">Joel Gehman</a> 教授，乔治·华盛顿大学，美国
                 </li>
                 <li>
-                    <a target="_blank" href="https://apps.ualberta.ca/directory/person/kurtk">Kurt O. Konhauser</a> 教授 （院士），阿尔伯塔大学，加拿大
+                    <a target="_blank" href="https://apps.ualberta.ca/directory/person/kurtk">Kurt O. Konhauser</a> 教授
+                    （院士），阿尔伯塔大学，加拿大
                 </li>
                 <li>
                     <a>李英东</a> 助理研究员，中科院深海所，三亚
@@ -432,7 +447,9 @@
                     <a target="_blank" href="https://sthjxy.cdut.edu.cn/info/1104/2137.htm">蒲生彦</a> 教授，成都理工大学，成都
                 </li>
                 <li>
-                    <a target="_blank" href="https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page/QIAN-Pei-Yuan/2480">钱培元</a> 教授，香港科技大学，香港
+                    <a target="_blank"
+                       href="https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page/QIAN-Pei-Yuan/2480">钱培元</a>
+                    教授，香港科技大学，香港
                 </li>
                 <li>
                     <a target="_blank" href="https://es.nju.edu.cn/szt/list.htm">沈征涛</a> 副教授（海外高层次人才），南京大学，南京
@@ -444,7 +461,8 @@
                     <a>宋易南</a> 工程师，中国石油集团安全环保技术研究院，北京
                 </li>
                 <li>
-                    <a target="_blank" href="https://faculty.tongji.edu.cn/zhangyunhui/zh_CN/index.htm">张云惠</a> 助理教授，同济大学，上海
+                    <a target="_blank" href="https://faculty.tongji.edu.cn/zhangyunhui/zh_CN/index.htm">张云惠</a>
+                    助理教授，同济大学，上海
                 </li>
             </ul>
         </div>
@@ -458,31 +476,39 @@
                 <tbody>
                 <tr>
                     <td valign="bottom">
-                        <a target="_blank" href="https://www.nsfc.gov.cn/"> <img src="./resources/link1.png" height="60px" alt=""> </a>
+                        <a target="_blank" href="https://www.nsfc.gov.cn/"> <img src="./resources/link1.png"
+                                                                                 height="60px" alt=""> </a>
                     </td>
                     <td valign="bottom">
-                        <a target="_blank" href="http://www.chinacses.org/"> <img src="./resources/link2.png" height="60px" alt=""> </a>
+                        <a target="_blank" href="http://www.chinacses.org/"> <img src="./resources/link2.png"
+                                                                                  height="60px" alt=""> </a>
                     </td>
                     <td></td>
                 </tr>
                 <tr>
                     <td valign="bottom">
-                        <a target="_blank" href="https://www.cnpc.com.cn/cnpc/index.shtml"> <img src="./resources/link3.png" height="60px" alt=""> </a>
+                        <a target="_blank" href="https://www.cnpc.com.cn/cnpc/index.shtml"> <img
+                                src="./resources/link3.png" height="60px" alt=""> </a>
                     </td>
                     <td valign="bottom">
-                        <a target="_blank" href="http://www.sinopecgroup.com.cn/group/"> <img src="./resources/link4.png" height="60px" alt=""> </a>
+                        <a target="_blank" href="http://www.sinopecgroup.com.cn/group/"> <img
+                                src="./resources/link4.png" height="60px" alt=""> </a>
                     </td>
-                    <td valign="bottom" >
-                        <a target="_blank" href="https://www.cnooc.com.cn/#1"> <img src="./resources/link5.png" height="60px" alt=""> </a>
+                    <td valign="bottom">
+                        <a target="_blank" href="https://www.cnooc.com.cn/#1"> <img src="./resources/link5.png"
+                                                                                    height="60px" alt=""> </a>
                     </td>
                 </tr>
                 <tr>
                     <td valign="bottom">
-                        <a target="_blank" href="https://cn.antonoil.com/"> <img src="./resources/link6.png" height="30px" alt="" style="margin-left:10px;"> </a>
+                        <a target="_blank" href="https://cn.antonoil.com/"> <img src="./resources/link6.png"
+                                                                                 height="30px" alt=""
+                                                                                 style="margin-left:10px;"> </a>
                     </td>
                     <td></td>
                     <td valign="bottom">
-                        <a target="_blank" href="http://www.cps.org.cn/"> <img src="./resources/link7.png" height="50px" alt="" style="margin-left:-300px;"> </a>
+                        <a target="_blank" href="http://www.cps.org.cn/"> <img src="./resources/link7.png" height="50px"
+                                                                               alt="" style="margin-left:-300px;"> </a>
                     </td>
                 </tr>
                 </tbody>
@@ -492,5 +518,666 @@
     </div>
 </div>
 
+
+<div id="resume" class="content">
+    <br>
+    <table>
+        <tbody>
+        <tr>
+            <td valign="top">
+                <p style="margin-top:40px;">
+                    <a style="font-size: 36px;">钟 诚</a> <a style="font-size: 20px;">（中共党员、香港研资局学者）</a>
+                </p>
+                <hr>
+                <p style="margin-top:50px;">中国四川省成都市新都区新都大道8号</p>
+                <p>chengzhong@swpu.edu.cn • 191-1358-3760</p>
+            </td>
+            <td style="width:200px;">
+                <img src="./resources/photo1.png" width="200" alt="">
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div style="width:750px; margin-top:40px; margin-left:auto; margin-right:auto;">
+        <h2>工作经历</h2>
+        <hr>
+    </div>
+    <table class="resume-table" style="table-layout:fixed;">
+        <tbody>
+        <tr>
+            <td style="height:50px;width:250px;">
+                <strong> Ⅰ. 学术任职 </strong>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                2024-至今 副教授
+            </td>
+            <td>
+                化学化工学院，西南石油大学，中国
+            </td>
+        </tr>
+        <tr>
+            <td>
+                2023–至今 讲师
+            </td>
+            <td>
+                化学化工学院，西南石油大学，中国
+            </td>
+        </tr>
+        <tr>
+            <td>
+                2022–2023 香港研资局博士后
+            </td>
+            <td>
+                海洋系，香港科技大学，中国香港
+            </td>
+        </tr>
+        <tr>
+            <td>
+                2021–2022 博士后
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <li>导师：钱培元，David von Hansemann 教授，海洋系创系主任</li>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="height: 50px; width:250px;">
+                <strong> II. 访问职位 </strong>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                2019–2020 访问学者
+            </td>
+            <td>
+                环境学院，清华大学，中国
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <li>导师：侯德义教授 （国家青年千人，国家杰出青年）</li>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="height: 50px; width:250px;">
+                <strong> III. 学术兼职 </strong>
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                2022–至今 《石油与天然气化工》 首届青年编委
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                2022–至今 Frontiers in Environmental Chemistry 首届青年编委
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                Environmental Science & Technology，Water Research 等9个国际知名学术期刊担任审稿人
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+
+    <div style="width:750px; margin-top:40px; margin-left:auto; margin-right:auto;">
+        <h2>教育经历</h2>
+        <hr>
+    </div>
+    <table class="resume-table" style="table-layout:fixed;">
+        <tbody>
+        <tr>
+            <td style="width:350px;">
+                2017–2020 博士
+            </td>
+            <td>
+                地球与大气科学学院，阿尔伯塔大学， 加拿大
+            </td>
+        </tr>
+        <tr>
+            <td>
+                2016–2017 硕士
+            </td>
+            <td>
+                地球与大气科学学院，阿尔伯塔大学， 加拿大
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <li>环境地球科学，硕博导师：教授 Daniel S. Alessi（加拿大皇家学院青年院士，Encana 石油公司水资源首席科学家）</li>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                2014–2015 硕士
+            </td>
+            <td>
+                地球与大气科学学院， 阿尔伯塔大学，加拿大
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <li>石油地质，硕士导师：教授 Karlis Muehlenbachs</li>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                2010–2014 学士 资源勘查工程 (校级优秀毕业生)
+            </td>
+            <td>
+                西南石油大学，中国
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div style="width:750px; margin-top:40px; margin-left:auto; margin-right:auto;">
+        <h2>科考经历</h2>
+        <hr>
+    </div>
+    <ol>
+        <li style="margin-top:15px">
+            2022 南海海马冷泉生态系统科学考察（航次主持单位：自然资源部第一海洋研究所）
+        </li>
+        <li style="margin-top:15px">
+            2021 南海海马冷泉生态系统科学考察（航次主持单位：自然资源部广州海洋地质调查局）
+        </li>
+    </ol>
+
+    <div style="width:750px; margin-top:40px; margin-left:auto; margin-right:auto;">
+        <h2>项目经历</h2>
+        <hr>
+    </div>
+    <ol>
+        <li style="margin-top:15px">
+        2024.01-2026.12 至今 基于分子指纹的水力压裂液可持续化体系研发与优选，西南石油大学“启航计划”，10万，负责人。
+        </li>
+        <li style="margin-top:15px">
+        2023.08-2023.11 至今 配套化学堵剂优选技术研究服务（ZX2023ZCGCF3935），中海油能源发展股份有限公司，20万，主研。
+        </li>
+        <li style="margin-top:15px">
+        2023.06-2024.09 大学生创新创业训练计划项目，油气污染土壤微生物生态组学及其原位生态修复应用研究，1万，指导教师。
+        </li>
+        <li style="margin-top:15px">
+        2023-至今 西南石油大学引进人才化工院师资专资（0101010044023），10万，负责人。
+        </li>
+        <li style="margin-top:15px">
+        2022–至今 香港政府研资局博士后奖学金（PDFS2223-6S03），蓝藻基因组进化与地球大气和海洋化学变化之间的复杂相互作用，122万 港币，负责人。
+        </li>
+        <li style="margin-top:15px">
+        2020–至今 南方海洋科学与工程广东省实验室（广州）香港分部 （SMSEGL20SC01），1.14亿，在研，参与。
+        </li>
+        <li style="margin-top:15px">
+        2019.9–2022.08 南方海洋科学与工程广东省实验室引进人才团队重点专项（广州） （GML2019ZD0409），南海冷泉生态组学，1450万，在研，参与。
+        </li>
+        <li style="margin-top:15px">
+        2015–2020 加拿大自然科学和工程研究委员会基金 （CRDPJ 469308-14），为阿尔伯塔省水力压裂提供最佳实践，200万（加元），已结题，骨干成员。
+        </li>
+    </ol>
+
+    <div style="width:750px; margin-top:40px; margin-left:auto; margin-right:auto;">
+        <h2>获奖和荣誉</h2>
+        <hr>
+    </div>
+    <table class="resume-table" style="table-layout:fixed;">
+        <tbody>
+        <tr>
+            <td style="width:40px;">
+                2023
+            </td>
+            <td>
+                教师资格岗前培训优秀示范课学员（四川省高校师资培训中心）
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                2019级环境工程本科毕业设计优秀指导教师
+            </td>
+        </tr>
+        <tr>
+            <td>
+                2022
+            </td>
+            <td>
+                香港特区政府研资局博士后研究资助
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                <li>每年全球全学科50个名额</li>
+                <li>香港科技大学海洋系首位获得者</li>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                2017
+            </td>
+            <td>
+                阿尔伯塔大学 J Gordin Kaplan Student 奖学金
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                阿尔伯塔大学 GSA Academic Travel Grants 奖学金
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                阿尔伯塔大学博士全额奖学金
+            </td>
+        </tr>
+        <tr>
+            <td>
+                2016
+            </td>
+            <td>
+                阿尔伯塔大学硕士全额奖学金
+            </td>
+        </tr>
+        <tr>
+            <td>
+                2014
+            </td>
+            <td>
+                西南石油大学校级优秀毕业生
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+
+    <div style="width:750px; margin-top:40px; margin-left:auto; margin-right:auto;">
+        <h2>学术论文 (* 通讯作者)</h2>
+        <hr>
+    </div>
+    <p style="text-align: center; margin-top: 20px;">
+        <strong>2023</strong>
+    </p>
+    <ol>
+        <li style="margin-top:15px">
+            Mina Luo *, Tianfu Che, Chao Huang, Chunmei Zhu, Hanchao Yang, <strong>Cheng Zhong*</strong> (2023) Efficient removal of aqueous Pb(II) ions by magnetic alginate composite microcapsules containing canola straw-derived biochar as the reinforcing fillers, Journal of Polymer Science. In press (IF: 3.4, 高分子科学, Q2)
+        </li>
+        <li style="margin-top:15px">
+            Heng Wang, Fu Chen, Shengyun Zhan, Lin Zhang, Jie He, Mina Luo, Ran Wen, <strong>Cheng Zhong *</strong> (2023) Synergistic effect of hydrophobic modified Welan gum and Sodium Alcohol Ether Sulphate in saline solution. Colloids and Surfaces A: Physicochemical and Engineering Aspects. 677: 132379. (IF: 4.539, 物理化学, Q2)
+        </li>
+        <li style="margin-top:15px">
+            <strong>钟诚</strong>，杜鹏，刘自亮，朱松柏，钱培元*（2023）碳中和与中国海洋油气发展内在联结性研究, 石油与天然气化工, 52(4):32-40. (IF: 1.03, 中文核心)
+        </li>
+        <li style="margin-top:15px">
+            Xiao, Y., Wang, H., Lan, Y., <strong>Zhong, C.</strong>, Yan, G., Xu, Z., Lu, G., Chen, J., Wei, T., Wong, W-C., Kwan, Y-H., Qian, P-Y.* (2023) Changes in community structures and functions of the gut microbiomes of deep-sea cold seep mussels during in situ transplantation experiment. Animal Microbiome, 5(17)（IF：暂无，分区：暂无）
+        </li>
+        <li style="margin-top:15px">
+            Chen, J., Li, Y., <strong>Zhong, C.</strong>, Xu, Z., Lu, G., Jing, H., Liu, H.* (2023) Genomic insights into niche partitioning across sediment depth among anaerobic methane-oxidizing archaea in global methane seep. mSystems, 8(2): e0117922. (IF: 7.324, 微生物学，Q1)
+        </li>
+        <li style="margin-top:15px">
+            <strong>Zhong, C.*</strong>, Hou, D., Liu, B., Zhu, S., Wei, T., Gehman, J., Aless, D. S., Qian, P.-Y.* (2023) Water footprint of shale gas development in China in the carbon neutral era. Journal of Environmental Management, 331:117238 (IF: 8.91, 环境科学与生态学, Q1, Top)
+        </li>
+        <li style="margin-top:15px">
+            Cao, J.,* Yang, X., Yang, S., <strong>Zhong, C.</strong>, Wang, Y. (2023) Records of apatite for multiple injections of magmas in adakitic plutons: A case study of Mesozoic plutons in the Shatanjiao region of the Tongling ore cluster, South China. Journal of Asian Earth Sciences 242: 105507 (IF: 3.415, 地球科学综合, Q3)
+        </li>
+        <li style="margin-top:15px">
+            Luo, M.,* Yang, H., Wang, K., Song, F., He, Y., Zhang, Y., <strong>Zhong, C.*</strong> (2023) Coupling iron-carbon micro-electrolysis with persulfate advanced oxidation for hydraulic fracturing return fluid treatment. Chemosphere 313: 137415. (IF: 8.943, 环境科学, Q1, Top)
+        </li>
+        <li style="margin-top:15px">
+            Luo, M.,* Zhu, C., Chen, Q., Song, F., Hao, W., Shen, Z., Konhauser, K. O., Alessi, D. S., <strong>Zhong, C.*</strong> (2023) In-situ growth of ZIF-8 nanocrystals on biochar for boron adsorption. Colloids and Surfaces A: Physicochemical and Engineering Aspects 657: 130504. (IF: 4.539, 物理化学, Q2)
+        </li>
+    </ol>
+
+    <p style="text-align: center; margin-top: 20px;">
+        <strong>2022</strong>
+    </p>
+    <ol start="10">
+        <li style="margin-top:15px">
+            Wang, H., Chen, F.,* Li, D., Zhang, L., Luo, M., He, J., <strong>Zhong, C.*</strong> (2022) Viscosity and structure characterization of the 1-bromohexadecane-modified welan gum in the saline solution. Energy & Fuels 36: 6597-6605. (IF: 4.654, 化学工程, Q2)
+        </li>
+        <li style="margin-top:15px">
+            <strong>Zhong, C.</strong>,* Nesbø, C. L., von Gunten, K., Zhang, Y., Shao, X., Jin, R., Konhauser, K. O., Goss, G. G., Martin, J. W., He, Y., Qian, P.-Y., Lanoil, B. D., and Alessi, D. S.* (2022) Complex impacts of hydraulic fracturing return fluids on soil microbial community respiration, structure, and functional potentials. Environmental Microbiology 24: 4108-4123. (IF: 5.476, 微生物学, Q2)
+        </li>
+        <li style="margin-top:15px">
+            Liao, Z, Chen, F., Deng, Y., Wang, K., von Gunten, K., He, Y., and <strong>Zhong, C.*</strong> (2022) Organic weighting hydraulic fracturing fluid: complex interactions between formate salts, hydroxy carboxylate acid, and guar. SPE Journal SPE-209606-PA. (IF: 3.602, 石油工程, Q1, Top)
+        </li>
+    </ol>
+
+    <p style="text-align: center; margin-top: 20px;">
+        <strong>2021</strong>
+    </p>
+    <ol start="13">
+        <li style="margin-top:15px">
+            Lu, Y., Zhang, Y., <strong>Zhong, C.</strong>, Martin, J. W., Alessi, D. S., Goss, G. G., He, Y.* (2021) Suspended solids-associated toxicity of hydraulic fracturing flowback and produced water on early life stages of zebrafish (Danio rerio). Environmental Pollution 287: 117614. (IF: 9.988, 环境科学与生态学, Q1, Top)
+        </li>
+        <li style="margin-top:15px">
+            <strong>Zhong, C.</strong>,* Zolfaghari, A., Hou, D., Goss, G. G., Lanoil, B. D., Gehman, J., Tsang, D. C. W., He, Y., Alessi, D. S.* (2021) Comparison of the hydraulic fracturing water cycle in China and North America: A critical review. Environmental Science & Technology 55(11): 7167-7185. (IF: 11.357, 环境科学与生态学, Q1, Top)
+        </li>
+        <li style="margin-top:15px">
+            <strong>Zhong, C.</strong>, Kwan, Y. H., Goss, G. G., Alessi, D. S., Qian, P.-Y.* (2021) Hydraulic fracturing return fluids from offshore hydrocarbon extraction present new risks to marine ecosystems. Environmental Science & Technology 55(8): 4199-4201. (IF: 11.357, 环境科学与生态学, Q1, Top)
+        </li>
+    </ol>
+
+    <p style="text-align: center; margin-top: 20px;">
+        <strong>2020</strong>
+    </p>
+    <ol start="16">
+        <li style="margin-top:15px">
+            <strong>Zhong, C.</strong>, Nesbø, C. L., Goss, G. G., Lanoil, B. D., Alessi, D. S.* (2020) Response of aquatic microbial communities and bioindicator modelling of hydraulic fracturing flowback and produced water. FEMS Microbiology Ecology 96(5): fiaa068. (IF: 4.519, 微生物学, Q2)
+        </li>
+    </ol>
+
+    <p style="text-align: center; margin-top: 20px;">
+        <strong>2019</strong>
+    </p>
+    <ol start="17">
+        <li style="margin-top:15px">
+            <strong>Zhong, C.</strong>, Li, J., Flynn, S. L., Nesbø, C. L., Sun, C., von Gunten, K., Lanoil, B. D., Goss, G. G., Martin, J. W., Alessi, D. S.* (2019) Temporal changes in microbial community composition and geochemistry in flowback and produced water from the Duvernay Formation. ACS Earth and Space Chemistry 3(6): 1047-1057. (IF: 3.556, 地球化学, Q2)
+        </li>
+    </ol>
+
+    <p style="text-align: center; margin-top: 20px;">
+        <strong>2019</strong>
+    </p>
+    <ol start="18">
+        <li style="margin-top:15px">
+            von Gunten, K., Hamilton, S. M., <strong>Zhong, C.</strong>, Nesbø, C., Li, J., Muehlenbachs, K., Konhauser, K. O., Alessi, D. S.* (2018) Electron donor-driven bacterial and archaeal community patterns along forest ring edges in Ontario, Canada. Environmental Microbiology Reports 10(6): 663-672. (IF: 4.006, 环境科学, Q2)
+        </li>
+    </ol>
+
+    <p style="text-align: center; margin-top: 20px;">
+        <strong>2013</strong>
+    </p>
+    <ol start="19">
+        <li style="margin-top:15px">
+            <strong>钟诚 *</strong>，刘铉东，陈馥，韩玉婷，许园 (2013) 特殊岩性储层岩心与酸液适应性研究, 钻采工艺 36(1): 88-90.
+        </li>
+    </ol>
+
+    <p style="text-align: center; margin-top: 20px;">
+        <strong>2012</strong>
+    </p>
+    <ol start="20">
+        <li style="margin-top:15px">
+            <strong>钟诚 *</strong>，刘铉东，韩玉婷，许馨 (2012) 适应特殊岩性的酸液体系研究, 石油与天然气化工41(6): 597-599.
+        </li>
+    </ol>
+
+    <div style="width:750px; margin-top:40px; margin-left:auto; margin-right:auto;">
+        <h2>专利</h2>
+        <hr>
+    </div>
+    <ol>
+        <li style="margin-top:15px">
+            中国发明专利：一种可生物降解微球型硅硼交联剂及其制备方法，专利号：ZL202310171570.6 （第一发明人），授权日：2023.05.02
+        </li>
+        <li style="margin-top:15px">
+            中国实用新型专利：一种快速测试钻井液滤失性的试剂盒，专利号：ZL202321459838.8 （第二发明人），授权日：2023.11.03
+        </li>
+    </ol>
+
+    <div style="width:750px; margin-top:40px; margin-left:auto; margin-right:auto;">
+        <h2>重要会议</h2>
+        <hr>
+    </div>
+    <ol>
+        <li style="margin-top:15px">
+            第九届土壤与地下水国际研讨会，专题九：地下水有机污染协同修复技术及案例，“高通量分子指纹在油矿区复杂有机污染风险管控与修复的协同应用研究”, 口头报告。
+        </li>
+        <li style="margin-top:15px">
+            Zhong, C., Nesbø, C. L., von Gunten, K., Zhang, Y., Shao, X., Jin, R., Konhauser, K. O., Goss, G. G., Martin, J. W., He, Y., Qian, P.-Y., Lanoil, B. D., and Alessi, D. S. Impacts of hydraulic fracturing flowback and produced water on soil microbial communities (oral presentation). Abstracts of Papers of the 262th American Chemical Society National Meeting, Atlanta, U.S., August 26, 2021. Paper ID: 3582660, 口头报告
+        </li>
+        <li style="margin-top:15px">
+            Zhong, C., Nesbø, C. L., Lanoil, B. D., Alessi, D. S. Response of surface water microbial communities exposed to spills of flowback and produced water (oral presentation). Abstracts of Papers of the 258th American Chemical Society National Meeting, Vol. 258, San Diego, U.S., August 29, 2019, 口头报告
+        </li>
+        <li style="margin-top:15px">
+            Zhong, C., Nesbø, C. L., Goss, G. G., Lanoil, B. D., Alessi, D. S. Sensitivity and response of aquatic microbial community to shale flowback and produced water contamination (poster). 2nd Geobiology Conference, Banff, Canada, June 11, 2019.
+        </li>
+        <li style="margin-top:15px">
+            Zhong, C., Li, J., Flynn, S. L., Nesbø, C. L., Sun, C., von Gunten, K., Lanoil, B. D., Goss, G. G., Martin, J. W., Alessi, D. S. Microbial community dynamics in flowback and produced water from unconventional hydrocarbon wells (oral presentation). Resources for Future Generations, Vancouver, Canada, June 18, 2018, 口头报告
+        </li>
+        <li style="margin-top:15px">
+            4th EIP Water Conference (Co-Chair: Innovation Water Product and Chinese Markets), Porto, Portugal, September 28, 2017.
+        </li>
+        <li style="margin-top:15px">
+            Zhong, C., Li, J., Flynn, S. L., Nesbø, C. L., Sun, C., von Gunten, K., Lanoil, B. D., Goss, G. G., Martin, J. W., Alessi, D. S. Microbial community dynamics in the hydraulic fracturing water cycle from two newly fractured shale gas wells in western Canada (poster). 1st Geobiology Conference Banff, Canada, June 14, 2017.
+        </li>
+        <li style="margin-top:15px">
+            Zhong, C., Li, J., Flynn, S. L., Nesbø, C. L., Lanoil, B. D., Goss, G. G., Alessi, D. S. Microbial community dynamics in the hydraulic fracturing water cycle of a newly fractured shale gas well in western Canada (oral presentation). Abstracts of Papers of the 253th American Chemical Society National Meeting, Vol. 253, San Francisco, U.S., April 7, 2017, 口头报告
+        </li>
+    </ol>
+
+    <div style="width:750px; margin-top:40px; margin-left:auto; margin-right:auto;">
+        <h2>社会服务</h2>
+        <hr>
+    </div>
+    <ol>
+        <li style="margin-top:15px">
+            授课：科学论文的选题与写作，中石化广元天然气净化有限公司
+        </li>
+    </ol>
+
+</div>
+
+<div id="activities" class="content">
+    <br>
+    <div class="subtitle"> 钟诚课题组活动集合</div>
+    <br>
+    <p>
+        2023.10.10 论文写作分享会
+        <img src="./resources/activity4.png" width="800" alt="">
+    </p>
+    <br>
+    <p>
+        2023.06.26 高新企业参观交流
+        <img src="./resources/activity3.png" width="800" alt="">
+    </p>
+    <br>
+    <p>
+        2023.10.20 中澳LCA线上研讨会
+        <img src="./resources/activity5.png" width="800" alt="">
+    </p>
+    <br>
+    <p>
+        2023.10.27 四川火锅美食
+        <img src="./resources/activity1.png" width="800" alt="">
+    </p>
+    <br>
+    <p>
+        2023.10.27 四川火锅美食
+        <img src="./resources/activity2.png" width="800" alt="">
+    </p>
+    <br>
+
+</div>
+
+<div id="papers" class="content">
+    <br>
+    <div class="subtitle"> 钟诚课题组论文集合</div>
+    <br>
+    <p>
+        SCI期刊
+    </p>
+    <ul>
+        <li>
+            <em>1. Mina Luo *, Tianfu Che, Chao Huang, Chunmei Zhu, Hanchao Yang, <strong>Cheng Zhong*</strong> (2023)
+                Efficient removal of aqueous Pb(II) ions by magnetic alginate composite microcapsules containing canola
+                straw-derived biochar as the reinforcing fillers, Journal of Polymer Science. In press (IF: 3.4) </em>
+        </li>
+        <br>
+
+        <li>
+            <em>2. Heng Wang, Fu Chen, Shengyun Zhan, Lin Zhang, Jie He, Mina Luo, Ran Wen, <strong>Cheng
+                Zhong*</strong> (2023) Synergistic effect of hydrophobic modified Welan gum and Sodium Alcohol Ether
+                Sulphate in saline solution. Colloids and Surfaces A: Physicochemical and Engineering Aspects. 677:
+                132379. (IF: 4.539)</em>
+        </li>
+        <br>
+
+        <li>
+            <em>3. Xiao, Y., Wang, H., Lan, Y., <strong>Zhong, C.</strong>, Yan, G., Xu, Z., Lu, G., Chen, J., Wei, T.,
+                Wong, W-C., Kwan, Y-H., Qian, P-Y.* (2023) Changes in community structures and functions of the gut
+                microbiomes of deep-sea cold seep mussels during in situ transplantation experiment. Animal Microbiome,
+                5(17)（IF：暂无）</em>
+        </li>
+        <br>
+
+        <li>
+            <em>4. Chen, J., Li, Y., <strong>Zhong, C.</strong>, Xu, Z., Lu, G., Jing, H., Liu, H.* (2023) Genomic
+                insights into niche partitioning across sediment depth among anaerobic methane-oxidizing archaea in
+                global methane seep. mSystems, 8(2): e0117922. (IF: 7.324)</em>
+        </li>
+        <br>
+
+        <li>
+            <em>5. <strong>Zhong, C.*</strong>, Hou, D., Liu, B., Zhu, S., Wei, T., Gehman, J., Aless, D. S., Qian,
+                P.-Y.* (2023) Water footprint of shale gas development in China in the carbon neutral era. Journal of
+                Environmental Management, 331:117238 (IF: 8.91)</em>
+        </li>
+        <br>
+
+        <li>
+            <em>6. Cao, J.,* Yang, X., Yang, S., <strong>Zhong, C.</strong>, Wang, Y. (2023) Records of apatite for
+                multiple injections of magmas in adakitic plutons: A case study of Mesozoic plutons in the Shatanjiao
+                region of the Tongling ore cluster, South China. Journal of Asian Earth Sciences 242: 105507 (IF: 3.415)</em>
+        </li>
+        <br>
+
+        <li>
+            <em>7. Luo, M.,* Yang, H., Wang, K., Song, F., He, Y., Zhang, Y., <strong>Zhong, C.*</strong> (2023)
+                Coupling iron-carbon micro-electrolysis with persulfate advanced oxidation for hydraulic fracturing
+                return fluid treatment. Chemosphere 313: 137415. (IF: 8.943)</em>
+        </li>
+        <br>
+
+        <li>
+            <em>8. Luo, M.,* Zhu, C., Chen, Q., Song, F., Hao, W., Shen, Z., Konhauser, K. O., Alessi, D. S., <strong>Zhong,
+                C.*</strong> (2023) In-situ growth of ZIF-8 nanocrystals on biochar for boron adsorption. Colloids and
+                Surfaces A: Physicochemical and Engineering Aspects 657: 130504. (IF: 4.539)</em>
+        </li>
+        <br>
+
+        <li>
+            <em>9. Wang, H., Chen, F.,* Li, D., Zhang, L., Luo, M., He, J., <strong>Zhong, C.*</strong> (2022) Viscosity
+                and structure characterization of the 1-bromohexadecane-modified welan gum in the saline solution.
+                Energy & Fuels 36: 6597-6605. (IF: 4.654)</em>
+        </li>
+        <br>
+
+        <li>
+            <em>10. <strong>Zhong, C.</strong>,* Nesbø, C. L., von Gunten, K., Zhang, Y., Shao, X., Jin, R., Konhauser,
+                K. O., Goss, G. G., Martin, J. W., He, Y., Qian, P.-Y., Lanoil, B. D., and Alessi, D. S.* (2022) Complex
+                impacts of hydraulic fracturing return fluids on soil microbial community respiration, structure, and
+                functional potentials. Environmental Microbiology 24: 4108-4123. (IF: 5.476)</em>
+        </li>
+        <br>
+
+        <li>
+            <em>11. Liao, Z, Chen, F., Deng, Y., Wang, K., von Gunten, K., He, Y., and <strong>Zhong, C.*</strong>
+                (2022) Organic weighting hydraulic fracturing fluid: complex interactions between formate salts, hydroxy
+                carboxylate acid, and guar. SPE Journal SPE-209606-PA. (IF: 3.602)</em>
+        </li>
+        <br>
+
+        <li>
+            <em>12. Lu, Y., Zhang, Y., <strong>Zhong, C.</strong>, Martin, J. W., Alessi, D. S., Goss, G. G., He, Y.*
+                (2021) Suspended solids-associated toxicity of hydraulic fracturing flowback and produced water on early
+                life stages of zebrafish (Danio rerio). Environmental Pollution 287: 117614. (IF: 9.988)</em>
+        </li>
+        <br>
+
+        <li>
+            <em>13. <strong>Zhong, C.*</strong>, Zolfaghari, A., Hou, D., Goss, G. G., Lanoil, B. D., Gehman, J., Tsang,
+                D. C. W., He, Y., Alessi, D. S.* (2021) Comparison of the hydraulic fracturing water cycle in China and
+                North America: A critical review. Environmental Science & Technology 55(11): 7167-7185. (IF:
+                11.357)</em>
+        </li>
+        <br>
+
+        <li>
+            <em>14. <strong>Zhong, C.</strong>, Kwan, Y. H., Goss, G. G., Alessi, D. S., Qian, P.-Y.* (2021) Hydraulic
+                fracturing return fluids from offshore hydrocarbon extraction present new risks to marine ecosystems.
+                Environmental Science & Technology 55(8): 4199-4201. (IF: 11.357)</em>
+        </li>
+        <br>
+
+        <li>
+            <em>15. <strong>Zhong, C.</strong>, Nesbø, C. L., Goss, G. G., Lanoil, B. D., Alessi, D. S.* (2020) Response
+                of aquatic microbial communities and bioindicator modelling of hydraulic fracturing flowback and
+                produced water. FEMS Microbiology Ecology 96(5): fiaa068. (IF: 4.519)</em>
+        </li>
+        <br>
+
+        <li>
+            <em>16. <strong>Zhong, C.</strong>, Li, J., Flynn, S. L., Nesbø, C. L., Sun, C., von Gunten, K., Lanoil, B.
+                D., Goss, G. G., Martin, J. W., Alessi, D. S.* (2019) Temporal changes in microbial community
+                composition and geochemistry in flowback and produced water from the Duvernay Formation. ACS Earth and
+                Space Chemistry 3(6): 1047-1057. (IF: 3.556)</em>
+        </li>
+        <br>
+
+        <li>
+            <em>17. von Gunten, K., Hamilton, S. M., <strong>Zhong, C.</strong>, Nesbø, C., Li, J., Muehlenbachs, K.,
+                Konhauser, K. O., Alessi, D. S.* (2018) Electron donor-driven bacterial and archaeal community patterns
+                along forest ring edges in Ontario, Canada. Environmental Microbiology Reports 10(6): 663-672. (IF:
+                4.006)</em>
+        </li>
+        <br>
+    </ul>
+
+    <br>
+
+    <p>
+        中文期刊
+    </p>
+    <ul>
+        <li>
+            <em>18. <strong>钟诚</strong>，杜鹏，刘自亮，朱松柏，钱培元*（2023）碳中和与中国海洋油气发展内在联结性研究,
+                石油与天然气化工, 52(4):32-40. (IF: 1.03)</em>
+        </li>
+        <br>
+    </ul>
+</div>
+
 </body>
+
+<script type="text/javascript">
+        if (!window.location.hash || window.location.hash == '#cn') {
+            document.querySelector("#cn").style.display = 'block';
+        } else if (window.location.hash == '#resume') {
+            document.querySelector("#resume").style.display = 'block';
+        } else if (window.location.hash == '#activities') {
+            document.querySelector("#activities").style.display = 'block';
+        } else if (window.location.hash == '#papers') {
+            document.getElementById("papers").style.display = 'block';
+        } else {
+            document.querySelector("#cn").style.display = 'block';
+        }
+
+        function clickContent(element, target) {
+            document.querySelectorAll("div.content").forEach((content) => {
+                content.style.display = 'none';
+            });
+            document.querySelector(target).style.display = 'block';
+        }
+</script>
 </html>
