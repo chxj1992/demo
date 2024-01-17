@@ -94,7 +94,7 @@ table td{
 	margin: 5px;
 	padding: 10px;
 /*	background-color:#F0F0F0; */
-	background-image:url("person_bg.png");
+	/* background-image:url("person_bg.png"); */
 }
 
 .alumni{
@@ -111,7 +111,7 @@ table td{
 	margin: 5px;
 	padding: 10px;
 /*	background-color:#F0F0F0; */
-	background-image:url("person_bg_blue.png");
+/*	background-image:url("person_bg_blue.png"); */
 }
 
 .person_i{
@@ -121,7 +121,7 @@ table td{
 	margin: 5px;
 	padding: 10px;
 /*	background-color:#F0F0F0; */
-	background-image:url("person_bg_red.png");
+/*	background-image:url("person_bg_red.png"); */
 }
 
 .name{
