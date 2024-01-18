@@ -83,16 +83,6 @@
             <div class="subtitle">科研项目</div>
             <p>请参阅我们课题组负责的<strong><a>完整科研项目列表。</a></strong></p>
             <ul>
-                <li>2024.01-2026.12 至今
-                    基于分子指纹的水力压裂液可持续化体系研发与优选，西南石油大学“启航计划”，10万，负责人。
-                </li>
-                <li>2023.06-2024.09
-                    大学生创新创业训练计划项目，油气污染土壤微生物生态组学及其原位生态修复应用研究，1万，指导教师。
-                </li>
-                <li>2023.01-2024.01 西南石油大学引进人才化工院师资专资（0101010044023），10万，负责人。</li>
-                <li>2022.12–2023.12 香港政府研资局博士后奖学金（PDFS2223-6S03），蓝藻基因组进化与地球大气和海洋化学变化之间的复杂相互作用，122万
-                    港币，负责人。
-                </li>
             </ul>
         </div>
 
@@ -578,21 +568,6 @@
             <div class="subtitle"> Projects</div>
             <p>Please refer to<strong><a> the full list.</a></strong></p>
             <ul>
-                <li>2024.01-2026.12 Development and Optimization of a Sustainable Molecular Fingerprint-Based Hydraulic
-                    Fracturing Fluid System under the "Sailing Plan" at Southwest Petroleum University, 100,000 RMB,
-                    Principal Investigator.
-                </li>
-                <li>2023.06-2024.09 Undergraduate Innovation and Entrepreneurship Training Program Project: "Microbial
-                    Ecogenomics of Oil and Gas Contaminated Soil and its In-Situ Ecological Remediation Application
-                    Research", 10,000 RMB, Guiding Teacher.
-                </li>
-                <li>2023.01-2024.01 Introduction of Talent Fund for Faculty Resources at Southwest Petroleum University
-                    (0101010044023), 100,000 RMB, Principal Investigator.
-                </li>
-                <li>2022.12–2023.12 Hong Kong Government Research Grants Council Postdoctoral Fellowship
-                    (PDFS2223-6S03), Complex Interactions between Cyanobacteria Genomic Evolution and Changing Earth's
-                    Atmospheric and Oceanic Chemistry, 1.22 million Hong Kong dollars, Principal Investigator.
-                </li>
             </ul>
         </div>
 
@@ -1797,6 +1772,26 @@
             document.querySelector('#cn-menu').style.display = 'block';
             document.querySelector('#en-menu').style.display = 'none';
         }
+
+        fetch('./data/achievement_cn.json')
+        .then((response) => response.json())
+        .then((json) => {
+            json.forEach((item) => {
+                const node = document.createElement("li");
+                node.appendChild(document.createTextNode(item));
+                document.querySelector("#achievement ul").appendChild(node);
+            })
+        });
+
+        fetch('./data/achievement_en.json')
+        .then((response) => response.json())
+        .then((json) => {
+            json.forEach((item) => {
+                const node = document.createElement("li");
+                node.appendChild(document.createTextNode(item));
+                document.querySelector("#en-achievement ul").appendChild(node);
+            })
+        });
 
         function clickContent(element, target) {
             document.querySelectorAll("div.content").forEach((content) => {
