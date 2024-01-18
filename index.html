@@ -1742,12 +1742,12 @@
             document.querySelector("#cn").style.display = 'block';
         }
 
-        if (!window.location.hash || window.location.hash.startsWith('#en')) {
-            document.querySelector('#cn-menu').style.display = 'none';
-            document.querySelector('#en-menu').style.display = 'block';
-        } else {
+        if (!window.location.hash || window.location.hash.startsWith('#cn')) {
             document.querySelector('#cn-menu').style.display = 'block';
             document.querySelector('#en-menu').style.display = 'none';
+        } else {
+            document.querySelector('#cn-menu').style.display = 'none';
+            document.querySelector('#en-menu').style.display = 'block';
         }
 
         fetch('./data/achievement_cn.json')
