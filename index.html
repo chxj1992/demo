@@ -63,17 +63,10 @@
 
         <br>
 
-        <div class="text">
+        <div id="news" class="text">
             <div class="subtitle">新闻</div>
             <p>请参阅我们课题组的<strong><a>完整新闻列表。</a></strong></p>
             <ul>
-                <li>2024.01.04 祝贺钟诚老师晋升为副研究员。</li>
-                <li>2023.10.27 钟诚老师受邀作为新进老师代表在西南石油大学工会发言。</li>
-                <li>2023.10.10
-                    课题组指导本科生团队（杜正杰等），油气污染土壤微生物生态组学及其原位生态修复应用，获得国家级大学生创新训练项目资助（202310615032）。
-                </li>
-                <li>2023.06.01 祝贺刘洲同，金盼晴顺利通过本科生毕业论文答辩，钟诚老师获本科生毕业论文优秀指导教师。</li>
-                <li>2023.01.01 钟诚老师正式入职西南石油大学化学化工学院。</li>
             </ul>
         </div>
 
@@ -540,25 +533,9 @@
         <br>
 
         <div class="text">
-            <div class="subtitle"> News</div>
+            <div id="en-news" class="subtitle"> News</div>
             <p>Please refer to <strong><a>the full list.</a></strong></p>
             <ul>
-                <li>2024.01.04 Congratulations to Dr. Cheng ZHONG on his promotion to Associate Professor.</li>
-                <li>2023.10.27 Dr. Cheng ZHONG was invited to speak at the union of Southwest Petroleum University as a
-                    representative of new teachers.
-                </li>
-                <li>2023.10.10
-                    Congratulations to undergraduate team (Zhengjie DU et al.) was funded by the national innovative
-                    training project for college students（202310615032) to study the microbial ecoomics of oil-gas
-                    contaminated soil and its application in situ ecological restoration.
-                </li>
-                <li>2023.06.01 Congratulations to Zhoutong LIU, Panqing JIN successfully passed the undergraduate
-                    graduation thesis defense, and Dr. Cheng ZHONG was awarded the outstanding advisor of undergraduate
-                    graduation thesis.
-                </li>
-                <li>2023.01.01 Dr. Cheng ZHONG officially joined the College of Chemistry and Chemical Engineering of
-                    Southwest Petroleum University.
-                </li>
             </ul>
         </div>
 
@@ -1780,6 +1757,26 @@
                 const node = document.createElement("li");
                 node.appendChild(document.createTextNode(item));
                 document.querySelector("#achievement ul").appendChild(node);
+            })
+        });
+
+        fetch('./data/news_en.json')
+        .then((response) => response.json())
+        .then((json) => {
+            json.forEach((item) => {
+                const node = document.createElement("li");
+                node.appendChild(document.createTextNode(item));
+                document.querySelector("#en-news ul").appendChild(node);
+            })
+        });
+
+        fetch('./data/news_cn.json')
+        .then((response) => response.json())
+        .then((json) => {
+            json.forEach((item) => {
+                const node = document.createElement("li");
+                node.appendChild(document.createTextNode(item));
+                document.querySelector("#news ul").appendChild(node);
             })
         });
 
