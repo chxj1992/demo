@@ -90,7 +90,7 @@ table td{
 .person{
 	position: relative;
 	width: 360px;
-	height: 45px;
+	/* height: 45px;*/
 	margin: 5px;
 	padding: 10px;
 /*	background-color:#F0F0F0; */
