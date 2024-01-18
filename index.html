@@ -1777,7 +1777,7 @@
 </body>
 
 <script type="text/javascript">
-        if (!window.location.hash || window.location.hash == '#cn') {
+        if (!window.location.hash) {
             document.querySelector("#cn").style.display = 'block';
         } else if (window.location.hash == '#resume') {
             document.querySelector("#resume").style.display = 'block';
@@ -1785,18 +1785,18 @@
             document.querySelector("#activities").style.display = 'block';
         } else if (window.location.hash == '#papers') {
             document.getElementById("papers").style.display = 'block';
-        } else if (window.location.hash == '#en') {
+        } else if (window.location.hash.startsWith('#en')) {
             document.querySelector("#en").style.display = 'block';
         } else {
             document.querySelector("#cn").style.display = 'block';
         }
 
-        if (!window.location.hash || window.location.hash.startWith('#en')) {
+        if (!window.location.hash || window.location.hash.startsWith('#en')) {
             document.querySelector('#cn-menu').style.display = 'none';
             document.querySelector('#en-menu').style.display = 'block';
         } else {
-            document.querySelector('#cn-menu').style.display = 'none';
-            document.querySelector('#en-menu').style.display = 'block';
+            document.querySelector('#cn-menu').style.display = 'block';
+            document.querySelector('#en-menu').style.display = 'none';
         }
 
         function clickContent(element, target) {
