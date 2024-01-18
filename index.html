@@ -22,13 +22,23 @@
 <body>
 
 <div id="top">
-    <div class="menu"><a href="#cn" onclick="clickContent(this, '#cn');">主页</a> / <a
-            href="#achievement" onclick="clickContent(this, '#cn');">成果</a> / <a
-            href="#members" onclick="clickContent(this, '#cn');">人员</a> / <a
-            href="#facility" onclick="clickContent(this, '#cn');">设施</a> / <a
-            href="#activity" onclick="clickContent(this, '#cn');">活动</a> / <a
-            href="#access" onclick="clickContent(this, '#cn');">联系</a>
-        <!--        | <a href="#cn">中文</a>/<a href="#en">English</a>-->
+    <div id="cn-menu" class="menu"><a href="#cn" onclick="clickContent(this, '#cn');">主页</a> /
+        <a href="#achievement" onclick="clickContent(this, '#cn');">成果</a> /
+        <a href="#members" onclick="clickContent(this, '#cn');">人员</a> /
+        <a href="#facility" onclick="clickContent(this, '#cn');">设施</a> /
+        <a href="#activity" onclick="clickContent(this, '#cn');">活动</a> /
+        <a href="#access" onclick="clickContent(this, '#cn');">联系</a> /
+        <a href="#cn" onclick="clickContent(this, '#cn');">中文</a> /
+        <a href="#en" onclick="clickContent(this, '#en');">English</a>
+    </div>
+    <div id="en-menu" class="menu" style="display:none;"><a href="#en" onclick="clickContent(this, '#en');">Main</a> /
+        <a href="#en-achievement" onclick="clickContent(this, '#en');">Publications</a> /
+        <a href="#en-members" onclick="clickContent(this, '#en');">People</a> /
+        <a href="#en-facility" onclick="clickContent(this, '#en');">Facilities</a> /
+        <a href="#en-activity" onclick="clickContent(this, '#en');">Activities</a> /
+        <a href="#en-access" onclick="clickContent(this, '#en');">Contact</a> /
+        <a href="#en" onclick="clickContent(this, '#en');">English</a> /
+        <a href="#cn" onclick="clickContent(this, '#cn');">中文</a>
     </div>
 </div>
 
@@ -512,7 +522,553 @@
     </div>
 </div>
 
+<div id="en" class="content">
+    <div class="cfont">
 
+        <div class="topimage"><a href="#"><img
+                src="./resources/topimage.png" width="800"></a>
+        </div>
+
+        <div class="text">
+            <div class="subtitle"> ZHONG LAB（Group of Intelligent Chemistry and Biology）</div>
+            <p>
+                In the context of energy transition and carbon neutrality, our research group is dedicated to conducting
+                studies in the fields of multiple omics and their applications, including chemistry, biology, and
+                information. We aim to advance clean development and digital management in oil and gas fields, enhancing
+                energy recovery and transmission efficiency, reducing pollution, and mitigating carbon emissions. The
+                outcomes of our research are extensively applied in engineering practices related to susatainable
+                development of energy and the environment. Currently, the primary research directions of our group
+                include：
+            </p>
+            <ol>
+                <li>Management and Risk Control of Complex Aqueous Environment</li>
+                <li>Design and Enginnering Application of Functional Agents and Working Fluids</li>
+                <li>High-Dimentional Data and Information Technology</li>
+            </ol>
+        </div>
+
+        <br>
+
+        <div class="text">
+            <div class="subtitle"> News</div>
+            <p>Please refer to <strong><a>the full list.</a></strong></p>
+            <ul>
+                <li>2024.01.04 Congratulations to Dr. Cheng ZHONG on his promotion to Associate Professor.</li>
+                <li>2023.10.27 Dr. Cheng ZHONG was invited to speak at the union of Southwest Petroleum University as a
+                    representative of new teachers.
+                </li>
+                <li>2023.10.10
+                    Congratulations to undergraduate team (Zhengjie DU et al.) was funded by the national innovative
+                    training project for college students（202310615032) to study the microbial ecoomics of oil-gas
+                    contaminated soil and its application in situ ecological restoration.
+                </li>
+                <li>2023.06.01 Congratulations to Zhoutong LIU, Panqing JIN successfully passed the undergraduate
+                    graduation thesis defense, and Dr. Cheng ZHONG was awarded the outstanding advisor of undergraduate
+                    graduation thesis.
+                </li>
+                <li>2023.01.01 Dr. Cheng ZHONG officially joined the College of Chemistry and Chemical Engineering of
+                    Southwest Petroleum University.
+                </li>
+            </ul>
+        </div>
+
+        <br>
+
+        <div id="en-achievement" class="text">
+            <div class="subtitle"> Projects</div>
+            <p>Please refer to<strong><a> the full list.</a></strong></p>
+            <ul>
+                <li>2024.01-2026.12 Development and Optimization of a Sustainable Molecular Fingerprint-Based Hydraulic
+                    Fracturing Fluid System under the "Sailing Plan" at Southwest Petroleum University, 100,000 RMB,
+                    Principal Investigator.
+                </li>
+                <li>2023.06-2024.09 Undergraduate Innovation and Entrepreneurship Training Program Project: "Microbial
+                    Ecogenomics of Oil and Gas Contaminated Soil and its In-Situ Ecological Remediation Application
+                    Research", 10,000 RMB, Guiding Teacher.
+                </li>
+                <li>2023.01-2024.01 Introduction of Talent Fund for Faculty Resources at Southwest Petroleum University
+                    (0101010044023), 100,000 RMB, Principal Investigator.
+                </li>
+                <li>2022.12–2023.12 Hong Kong Government Research Grants Council Postdoctoral Fellowship
+                    (PDFS2223-6S03), Complex Interactions between Cyanobacteria Genomic Evolution and Changing Earth's
+                    Atmospheric and Oceanic Chemistry, 1.22 million Hong Kong dollars, Principal Investigator.
+                </li>
+            </ul>
+        </div>
+
+        <br>
+
+        <div class="text">
+            <div class="subtitle"> Publicaitons</div>
+            <p style="margin-left:15px;">Please refer to <strong><a href="#papers"
+                                                                    onclick="clickContent(this, '#papers');">the full
+                list.</a></strong>
+            </p>
+            <p style="margin-left:15px;">Selected Paper：</p>
+            <ul>
+                <li>
+                    <em>Zhong, C., […], Alessi, D. S. <strong>Environmental Science & Technology 55(11):
+                        7167-7185 </strong> (2021) </em><br>
+                    <a>Comparison of the hydraulic fracturing water cycle in China and North America: A critical
+                        review. </a>
+                </li>
+                <li>
+                    <em>Zhong, C., […], Qian, P.-Y. <strong>Environmental Science & Technology 55(8):
+                        4199-4201 </strong> (2021) </em><br>
+                    <a>Hydraulic fracturing return fluids from offshore hydrocarbon extraction present new risks to
+                        marine ecosystems. </a>
+                </li>
+                <li>
+                    <em>Zhong, C., […], Alessi, D. S. <strong>Environmental Microbiology 24: 4108-4123 </strong> (2022)
+                    </em><br>
+                    <a>Complex impacts of hydraulic fracturing return fluids on soil microbial community respiration,
+                        structure, and functional potentials. </a>
+                </li>
+                <li>
+                    <em>Zhong, C., […], Qian, P.-Y. <strong>Journal of Environmental Management 331:117238 </strong>
+                        (2022) </em><br>
+                    <a>Water footprint of shale gas development in China in the carbon neutral era. </a>
+                </li>
+                <li>
+                    <em>Liao, Z, […], Zhong, C. <strong>SPE Journal SPE-209606-PA </strong> (2022) </em><br>
+                    <a>Organic weighting hydraulic fracturing fluid: complex interactions between formate salts, hydroxy
+                        carboxylate acid, and guar.</a>
+                </li>
+            </ul>
+        </div>
+
+        <br>
+
+        <div class="text">
+            <div class="subtitle"> Software and Database</div>
+            <ul>
+                <li><strong>FPWAtlas</strong>(Updated to 2024.01.10): A database of flowback and produced water genomes
+                </li>
+            </ul>
+        </div>
+
+        <br>
+
+        <div class="text">
+            <div class="subtitle"> Patent</div>
+            <ul>
+                <li>
+                    Cheng ZHONG，[…]，China Patent，2023.05.02<br>
+                    A Biodegradable Microsphere-Type Silicon-Boron Crosslinking Agent and Its Preparation Method，Patent
+                    Number：ZL202310171570.6
+                </li>
+                <li>
+                    Zhengjie DU，Cheng ZHONG，China Patent，2023.11.03<br>
+                    A Reagent Kit for Rapid Testing of Drilling Fluid Filtration Properties，Patent
+                    Number：ZL202321459838.8
+                </li>
+            </ul>
+        </div>
+
+        <div id="en-members"><br></div>
+        <div class="subtitle"> People</div>
+        <div class="photo"><img src="./resources/members.png" width="760">
+            <div align="right" style="font-size:14px; line-height:20px; font-style:italic;">2023.06</div>
+        </div>
+
+        <table style="border-spacing:0 20px; table-layout:fixed;">
+            <tbody>
+            <tr>
+                <td style="width:250px;">
+                    <img src="./resources/photo1.png" width="200" alt="">
+                </td>
+                <td valign="top">
+                    <div class="person"><span class="name"> 钟 诚, Ph.D. </span> [<a
+                            href="#resume" onclick="clickContent(this, '#resume');">Curriculum Vitae</a>]<br>
+                        Associate Professor
+                    </div>
+                    <p>
+                        Principal Investigator, RGC Research Fellow, Member of South China Sea Scientific Expedition,
+                        Young Editorial Board Member of <em>Petroleum and Natural Gas Chemical Engineering</em>,
+                        Published over 20 papers as the first author/corresponding author in SCI journals, including
+                        <em>Environmental
+                            Science & Technology</em>, <em>Environmental Microbiology</em>, <em>SPE Journal</em>.
+                    </p>
+                    <p>
+                        Email：chengzhong@swpu.edu.cn
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="./resources/photo2.png" width="200" alt="">
+                </td>
+                <td valign="top">
+                    <div class="person"><span class="name"> Ya DENG（2023.09-）</span> <br>
+                        Master Student
+                    </div>
+                    <p>
+                        Utilizing artificial intelligence technology, we engage in the modeling of biological
+                        information data and software development to achieve the prediction of microbiologically
+                        influenced corrosion behavior.
+                    </p>
+                    <p>
+                        Email：202321000302@stu.swpu.edu.cn
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="./resources/photo3.png" width="200" alt="">
+                </td>
+                <td valign="top">
+                    <div class="person"><span class="name"> Yinmei FU（2023.09-）</span> <br>
+                        Master Student
+                    </div>
+                    <p>
+                        By utilizing bioinformatics, we aim to develop surfactants based on natural products for
+                        enhanced oil recovery processes in oilfield development.
+                    </p>
+                    <p>
+                        Email：202321000330@stu.swpu.edu.cn
+                    </p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="./resources/photo4.png" width="200" alt="">
+                </td>
+                <td valign="top">
+                    <div class="person"><span class="name"> Ping HE（2023.09-）</span> <br>
+                        Master Student
+                    </div>
+                    <p>
+                        Utilizing high-throughput sequencing and chemical analysis techniques, we investigate the impact
+                        of petroleum on the ecological environment in soil and groundwater, along with relevant
+                        pollution remediation strategies.
+                    </p>
+                    <p>
+                        Email：202321000320@stu.swpu.edu.cn
+                    </p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <hr>
+        <br>
+
+        <div style="font-size:20px"> Alumni</div>
+        <table style="border-spacing:0 20px; table-layout:fixed;">
+            <tbody>
+            <tr>
+                <td style="width:250px;">
+                    <img src="./resources/photo5.png" width="200" alt="">
+                </td>
+                <td valign="top">
+                    <div class="person"><span class="name"> Panqing JIN（2023.01-2023.06）</span><br>
+                        2023 Undergradate of Environmental Engineering
+                    </div>
+                    <p>
+                        Undergraduate thesis: Development of β-mannanase based on large-scale bioinformation mining
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./resources/photo6.jpeg" width="200" alt="">
+                </td>
+                <td valign="top">
+                    <div class="person"><span class="name"> Zhoutong LIU（2023.01-2023.06）</span><br>
+                        2023 Undergradate of Environmental Engineering, current position: China University of Petroleum
+                        (East China)
+                    </div>
+                    <p>
+                        Undergraduate thesis (excellent) : Microbial marker genomics study on characteristics of shale
+                        gas water circulation system
+                    </p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <hr>
+        <br>
+
+        <div id="en-facility" class="text">
+            <div class="subtitle"> Facilities</div>
+
+            <table style="border-spacing:0 20px;">
+                <tbody>
+                <tr>
+                    <td valign="bottom">
+                        Office of Computational Chemistry and Computational Biology
+                        <img src="./resources/facility1.png" height="350" alt="">
+                    </td>
+                    <td valign="bottom">
+                        Office of Applied Chemistry and Biology
+                        <img src="./resources/facility2.png" height="350" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="bottom">
+                        Microbiology and Molecular Biology Laboratory
+                        <img src="./resources/facility3.png" height="350" alt="">
+                    </td>
+                    <td valign="bottom">
+                        Applied Chemistry Laboratory
+                        <img src="./resources/facility4.png" height="350" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="bottom">
+                        Lab Photo 1
+                        <img src="./resources/facility5.png" height="260" alt="">
+                    </td>
+                    <td valign="bottom">
+                        <img src="./resources/facility6.png" height="260" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" valign="bottom">
+                        <p>Lab Photo 2</p>
+                        <img src="./resources/facility7.png" width="800" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" valign="bottom">
+                        <p>Lab Photo 3</p>
+                        <img src="./resources/facility8.png" width="800" alt="">
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <br>
+
+        <div id="en-activity" class="text">
+            <div class="subtitle"> Campus Activities</div>
+            <p>
+                Please refer to<strong><a href="#activities"
+                                          onclick="clickContent(this, '#activities');"> more photos.</a></strong>
+            </p>
+            <br>
+            <p>
+                2023.12.24 Christmas dinner
+                <img src="./resources/activity1.png" width="800" alt="">
+            </p>
+            <br>
+            <p>
+                2023.10.27 Sichuan hotpot
+                <img src="./resources/activity2.png" width="800" alt="">
+            </p>
+            <br>
+            <p>
+                2023.06.26 High-tech enterprises visit
+                <img src="./resources/activity3.png" width="800" alt="">
+            </p>
+        </div>
+
+        <div id="en-access"><br></div>
+        <div class="text">
+            <div class="subtitle"> Contact</div>
+            <p>
+                The research group is actively recruiting graduate students with a focus on cultivating talents who can
+                take on expert and leadership roles in research institutions, government agencies, and the petrochemical
+                industry. We are a diverse team, welcoming students interested in both wet and dry experiments to
+                receive training in this laboratory. Individuals with backgrounds in environmental science, geology,
+                chemistry, and proficiency in computer science and mathematics are encouraged to join us. We seek
+                applicants who are passionate about research, possess innovative and flexible thinking, have excellent
+                English proficiency (CET6, TOEFL 85, IELTS 6.5), effective communication and presentation skills, and
+                the ability to express their views clearly. Applicants should actively engage in team communication and
+                collaboration.
+            <p>
+                Note: Foreign applicants are advised to consult with the International Cooperation and Exchange Office
+                of Southwest Petroleum University before applying.
+            </p>
+            <p>
+                <img src="./resources/access1.png" width="800" alt="">
+                Address: A309, Mingde Building, Southwest Petroleum University, No. 8 Xindu Avenue, Xindu District,
+                Chengdu, Sichuan, China
+            </p>
+            <br>
+            <p>
+                Southwest Petroleum University (SWPU), is located in Xindu District, Chengdu City, Sichuan Province.
+                Here, you can not only appreciate the inclusive culture of Chengdu but also experience the rich history
+                and local customs. There are national treasures like pandas, vibrant cultural landscapes such as the
+                Jinsha Site, Jinli, and Kuanzhai Alley, as well as breathtaking natural scenery including Mount
+                Siguniang, Jiuzhaigou Valley, Huanglong, and delicious local foods like Bobo Chicken and hotpot.
+            </p>
+            <br>
+            <p>
+                Departing from Chengdu Shuangliu Airport：
+            </p>
+            <p>
+                At Shuangliu Airport Terminal 1 station, take Metro Line 10 (direction of Taiping Yuan), get off at
+                Taiping Yuan Station, transfer to Metro Line 3 (direction of Chengdu Medical College), get off at
+                University of Petroleum Station (Exit D), walk along University Road to the east gate of the campus.
+            </p>
+
+            <br>
+            <p>
+                Departure from Chengdu Tianfu Airport:
+            </p>
+            <p>
+                Walk 538 meters, take subway Line 18 (toward the South Railway Station) at Tianfu Airport Terminal 1 and
+                get off at the South Railway Station, transfer to subway Line 1 (toward Weijia Roll), get off at
+                Provincial Gymnasium Station, transfer to subway Line 3 (toward Chengdu Medical College), get off at
+                University of Petroleum Station (Exit D), walk along University Road to the East gate of the campus.
+            </p>
+
+            <br>
+            <p>
+                Chengdu East Railway Station
+            </p>
+            <p>
+                Walk 600 meters, take Subway Line 7 (outer ring), get off at Sima Bridge Station, transfer to subway
+                Line 3 (direction of Chengdu Medical College), get off at University of Petroleum Station (Exit D), walk
+                along University Road to the east gate of the campus.
+            </p>
+
+            <br>
+
+            <p>
+                <img src="./resources/access2.png" width="800" alt="">
+            </p>
+        </div>
+
+        <br>
+
+        <div class="text">
+            <div class="subtitle">Collaboration</div>
+            <p>Name A-Z</p>
+            <ul>
+                <li>
+                    <a target="_blank" href="http://edu.ihb.cas.cn/ds/bsds/202103/t20210304_627617.html">Lianguo
+                        CHEN</a>
+                    Researcher (Overseas high-level talents), Institute of Hydrology, Chinese Academy of Sciences, Wuhan
+                </li>
+                <li>
+                    <a target="_blank" href="https://grzy.cug.edu.cn/dongtian/zh_CN/index.htm">Tian DONG</a> Professor,
+                    China University of Geosciences (Wuhan), Wuhan
+                </li>
+                <li>
+                    <a href="">Daniel C.W. Tsang</a> Professor, Hong Kong University of Science and Technology, Hong
+                    Kong
+                </li>
+                <li>
+                    <a target="_blank" href="https://apps.ualberta.ca/directory/person/alessi">Daniel S. Alessi</a>
+                    Professor, University of Alberta, Canada
+                </li>
+                <li>
+                    <a target="_blank" href="https://apps.ualberta.ca/directory/person/ggoss">Greg G. Goss</a>
+                    Professor,
+                    University of Alberta, Canada
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.env.tsinghua.edu.cn/info/1263/6916.htm">Deyi HOU</a>
+                    Professor (National Outstanding Youth), Tsinghua University, Beijing
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.cityu.edu.hk/see/people/prof-yuhe-henry-he">Yuhe HE</a>
+                    Associate Professor, City University of Hong Kong, Hong Kong
+                </li>
+                <li>
+                    <a target="_blank" href="http://iwasakilab.k.u-tokyo.ac.jp/iwasaki/">Iwasaki Wataru</a> Professor,
+                    University of Tokyo, Japan
+                </li>
+                <li>
+                    <a target="_blank" href="https://business.gwu.edu/joel-gehman">Joel Gehman</a> Professor, George
+                    Washington University, USA
+                </li>
+                <li>
+                    <a target="_blank" href="https://apps.ualberta.ca/directory/person/kurtk">Kurt O. Konhauser</a>
+                    Professor
+                    (FRSC), University of Alberta, Canada
+                </li>
+                <li>
+                    <a>Yingdong LI</a> Assistant Researcher, Institute of Deep Ocean, Chinese Academy of Sciences, Sanya
+                </li>
+                <li>
+                    <a target="_blank" href="https://sthjxy.cdut.edu.cn/info/1104/2137.htm">Shengyan PU</a> Professor,
+                    Chengdu University of Technology, Chengdu
+                </li>
+                <li>
+                    <a target="_blank"
+                       href="https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page/QIAN-Pei-Yuan/2480">Pei-Yuan
+                        QIAN</a>
+                    Professor, Hong Kong University of Science and Technology, Hong Kong
+                </li>
+                <li>
+                    <a target="_blank" href="https://es.nju.edu.cn/szt/list.htm">Zhengtao SHEN</a> Associate Professor
+                    (Overseas High-Level Talents), Nanjing University, Nanjing
+                </li>
+                <li>
+                    <a>Qingwei WANG</a> Senior Engineer, Research Institute of Safety and Environmental Protection
+                    Technology, CNPC, Beijing
+                </li>
+                <li>
+                    <a>Yinan SONG</a> Engineer, Research Institute of Safety and Environmental Protection Technology,
+                    CNPC, Beijing
+                </li>
+                <li>
+                    <a target="_blank" href="https://faculty.tongji.edu.cn/zhangyunhui/zh_CN/index.htm">Yunhui ZHANG</a>
+                    Assistant Professor, Tongji University, Shanghai
+                </li>
+            </ul>
+        </div>
+
+        <br>
+
+        <div id="en-link" class="text">
+            <div class="subtitle"> Link</div>
+
+            <table style="border-spacing:0 20px;">
+                <tbody>
+                <tr>
+                    <td valign="bottom">
+                        <a target="_blank" href="https://www.nsfc.gov.cn/"> <img src="./resources/link1.png"
+                                                                                 height="60px" alt=""> </a>
+                    </td>
+                    <td valign="bottom">
+                        <a target="_blank" href="http://www.chinacses.org/"> <img src="./resources/link2.png"
+                                                                                  height="60px" alt=""> </a>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td valign="bottom">
+                        <a target="_blank" href="https://www.cnpc.com.cn/cnpc/index.shtml"> <img
+                                src="./resources/link3.png" height="60px" alt=""> </a>
+                    </td>
+                    <td valign="bottom">
+                        <a target="_blank" href="http://www.sinopecgroup.com.cn/group/"> <img
+                                src="./resources/link4.png" height="60px" alt=""> </a>
+                    </td>
+                    <td valign="bottom">
+                        <a target="_blank" href="https://www.cnooc.com.cn/#1"> <img src="./resources/link5.png"
+                                                                                    height="60px" alt=""> </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="bottom">
+                        <a target="_blank" href="https://cn.antonoil.com/"> <img src="./resources/link6.png"
+                                                                                 height="30px" alt=""
+                                                                                 style="margin-left:10px;"> </a>
+                    </td>
+                    <td></td>
+                    <td valign="bottom">
+                        <a target="_blank" href="http://www.cps.org.cn/"> <img src="./resources/link7.png" height="50px"
+                                                                               alt="" style="margin-left:-300px;"> </a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+<!--二级页面 resume-->
 <div id="resume" class="content">
     <br>
     <table>
@@ -654,7 +1210,9 @@
         </tr>
         <tr>
             <td colspan="2">
-                <li>环境地球科学，硕博导师：教授 Daniel S. Alessi（加拿大皇家学院青年院士，Encana 石油公司水资源首席科学家）</li>
+                <li>环境地球科学，硕博导师：教授 Daniel S. Alessi（加拿大皇家学院青年院士，Encana
+                    石油公司水资源首席科学家）
+                </li>
             </td>
         </tr>
         <tr>
@@ -700,28 +1258,30 @@
     </div>
     <ol>
         <li style="margin-top:15px">
-        2024.01-2026.12 至今 基于分子指纹的水力压裂液可持续化体系研发与优选，西南石油大学“启航计划”，10万，负责人。
+            2024.01-2026.12 至今 基于分子指纹的水力压裂液可持续化体系研发与优选，西南石油大学“启航计划”，10万，负责人。
         </li>
         <li style="margin-top:15px">
-        2023.08-2023.11 至今 配套化学堵剂优选技术研究服务（ZX2023ZCGCF3935），中海油能源发展股份有限公司，20万，主研。
+            2023.08-2023.11 至今 配套化学堵剂优选技术研究服务（ZX2023ZCGCF3935），中海油能源发展股份有限公司，20万，主研。
         </li>
         <li style="margin-top:15px">
-        2023.06-2024.09 大学生创新创业训练计划项目，油气污染土壤微生物生态组学及其原位生态修复应用研究，1万，指导教师。
+            2023.06-2024.09 大学生创新创业训练计划项目，油气污染土壤微生物生态组学及其原位生态修复应用研究，1万，指导教师。
         </li>
         <li style="margin-top:15px">
-        2023-至今 西南石油大学引进人才化工院师资专资（0101010044023），10万，负责人。
+            2023-至今 西南石油大学引进人才化工院师资专资（0101010044023），10万，负责人。
         </li>
         <li style="margin-top:15px">
-        2022–至今 香港政府研资局博士后奖学金（PDFS2223-6S03），蓝藻基因组进化与地球大气和海洋化学变化之间的复杂相互作用，122万 港币，负责人。
+            2022–至今 香港政府研资局博士后奖学金（PDFS2223-6S03），蓝藻基因组进化与地球大气和海洋化学变化之间的复杂相互作用，122万
+            港币，负责人。
         </li>
         <li style="margin-top:15px">
-        2020–至今 南方海洋科学与工程广东省实验室（广州）香港分部 （SMSEGL20SC01），1.14亿，在研，参与。
+            2020–至今 南方海洋科学与工程广东省实验室（广州）香港分部 （SMSEGL20SC01），1.14亿，在研，参与。
         </li>
         <li style="margin-top:15px">
-        2019.9–2022.08 南方海洋科学与工程广东省实验室引进人才团队重点专项（广州） （GML2019ZD0409），南海冷泉生态组学，1450万，在研，参与。
+            2019.9–2022.08 南方海洋科学与工程广东省实验室引进人才团队重点专项（广州）
+            （GML2019ZD0409），南海冷泉生态组学，1450万，在研，参与。
         </li>
         <li style="margin-top:15px">
-        2015–2020 加拿大自然科学和工程研究委员会基金 （CRDPJ 469308-14），为阿尔伯塔省水力压裂提供最佳实践，200万（加元），已结题，骨干成员。
+            2015–2020 加拿大自然科学和工程研究委员会基金 （CRDPJ 469308-14），为阿尔伯塔省水力压裂提供最佳实践，200万（加元），已结题，骨干成员。
         </li>
     </ol>
 
@@ -813,31 +1373,50 @@
     </p>
     <ol>
         <li style="margin-top:15px">
-            Mina Luo *, Tianfu Che, Chao Huang, Chunmei Zhu, Hanchao Yang, <strong>Cheng Zhong*</strong> (2023) Efficient removal of aqueous Pb(II) ions by magnetic alginate composite microcapsules containing canola straw-derived biochar as the reinforcing fillers, Journal of Polymer Science. In press (IF: 3.4, 高分子科学, Q2)
+            Mina Luo *, Tianfu Che, Chao Huang, Chunmei Zhu, Hanchao Yang, <strong>Cheng Zhong*</strong> (2023)
+            Efficient removal of aqueous Pb(II) ions by magnetic alginate composite microcapsules containing canola
+            straw-derived biochar as the reinforcing fillers, Journal of Polymer Science. In press (IF: 3.4, 高分子科学,
+            Q2)
         </li>
         <li style="margin-top:15px">
-            Heng Wang, Fu Chen, Shengyun Zhan, Lin Zhang, Jie He, Mina Luo, Ran Wen, <strong>Cheng Zhong *</strong> (2023) Synergistic effect of hydrophobic modified Welan gum and Sodium Alcohol Ether Sulphate in saline solution. Colloids and Surfaces A: Physicochemical and Engineering Aspects. 677: 132379. (IF: 4.539, 物理化学, Q2)
+            Heng Wang, Fu Chen, Shengyun Zhan, Lin Zhang, Jie He, Mina Luo, Ran Wen, <strong>Cheng Zhong *</strong>
+            (2023) Synergistic effect of hydrophobic modified Welan gum and Sodium Alcohol Ether Sulphate in saline
+            solution. Colloids and Surfaces A: Physicochemical and Engineering Aspects. 677: 132379. (IF: 4.539, 物理化学,
+            Q2)
         </li>
         <li style="margin-top:15px">
-            <strong>钟诚</strong>，杜鹏，刘自亮，朱松柏，钱培元*（2023）碳中和与中国海洋油气发展内在联结性研究, 石油与天然气化工, 52(4):32-40. (IF: 1.03, 中文核心)
+            <strong>钟诚</strong>，杜鹏，刘自亮，朱松柏，钱培元*（2023）碳中和与中国海洋油气发展内在联结性研究, 石油与天然气化工,
+            52(4):32-40. (IF: 1.03, 中文核心)
         </li>
         <li style="margin-top:15px">
-            Xiao, Y., Wang, H., Lan, Y., <strong>Zhong, C.</strong>, Yan, G., Xu, Z., Lu, G., Chen, J., Wei, T., Wong, W-C., Kwan, Y-H., Qian, P-Y.* (2023) Changes in community structures and functions of the gut microbiomes of deep-sea cold seep mussels during in situ transplantation experiment. Animal Microbiome, 5(17)（IF：暂无，分区：暂无）
+            Xiao, Y., Wang, H., Lan, Y., <strong>Zhong, C.</strong>, Yan, G., Xu, Z., Lu, G., Chen, J., Wei, T., Wong,
+            W-C., Kwan, Y-H., Qian, P-Y.* (2023) Changes in community structures and functions of the gut microbiomes of
+            deep-sea cold seep mussels during in situ transplantation experiment. Animal Microbiome, 5(17)（IF：暂无，分区：暂无）
         </li>
         <li style="margin-top:15px">
-            Chen, J., Li, Y., <strong>Zhong, C.</strong>, Xu, Z., Lu, G., Jing, H., Liu, H.* (2023) Genomic insights into niche partitioning across sediment depth among anaerobic methane-oxidizing archaea in global methane seep. mSystems, 8(2): e0117922. (IF: 7.324, 微生物学，Q1)
+            Chen, J., Li, Y., <strong>Zhong, C.</strong>, Xu, Z., Lu, G., Jing, H., Liu, H.* (2023) Genomic insights
+            into niche partitioning across sediment depth among anaerobic methane-oxidizing archaea in global methane
+            seep. mSystems, 8(2): e0117922. (IF: 7.324, 微生物学，Q1)
         </li>
         <li style="margin-top:15px">
-            <strong>Zhong, C.*</strong>, Hou, D., Liu, B., Zhu, S., Wei, T., Gehman, J., Aless, D. S., Qian, P.-Y.* (2023) Water footprint of shale gas development in China in the carbon neutral era. Journal of Environmental Management, 331:117238 (IF: 8.91, 环境科学与生态学, Q1, Top)
+            <strong>Zhong, C.*</strong>, Hou, D., Liu, B., Zhu, S., Wei, T., Gehman, J., Aless, D. S., Qian, P.-Y.*
+            (2023) Water footprint of shale gas development in China in the carbon neutral era. Journal of Environmental
+            Management, 331:117238 (IF: 8.91, 环境科学与生态学, Q1, Top)
         </li>
         <li style="margin-top:15px">
-            Cao, J.,* Yang, X., Yang, S., <strong>Zhong, C.</strong>, Wang, Y. (2023) Records of apatite for multiple injections of magmas in adakitic plutons: A case study of Mesozoic plutons in the Shatanjiao region of the Tongling ore cluster, South China. Journal of Asian Earth Sciences 242: 105507 (IF: 3.415, 地球科学综合, Q3)
+            Cao, J.,* Yang, X., Yang, S., <strong>Zhong, C.</strong>, Wang, Y. (2023) Records of apatite for multiple
+            injections of magmas in adakitic plutons: A case study of Mesozoic plutons in the Shatanjiao region of the
+            Tongling ore cluster, South China. Journal of Asian Earth Sciences 242: 105507 (IF: 3.415, 地球科学综合, Q3)
         </li>
         <li style="margin-top:15px">
-            Luo, M.,* Yang, H., Wang, K., Song, F., He, Y., Zhang, Y., <strong>Zhong, C.*</strong> (2023) Coupling iron-carbon micro-electrolysis with persulfate advanced oxidation for hydraulic fracturing return fluid treatment. Chemosphere 313: 137415. (IF: 8.943, 环境科学, Q1, Top)
+            Luo, M.,* Yang, H., Wang, K., Song, F., He, Y., Zhang, Y., <strong>Zhong, C.*</strong> (2023) Coupling
+            iron-carbon micro-electrolysis with persulfate advanced oxidation for hydraulic fracturing return fluid
+            treatment. Chemosphere 313: 137415. (IF: 8.943, 环境科学, Q1, Top)
         </li>
         <li style="margin-top:15px">
-            Luo, M.,* Zhu, C., Chen, Q., Song, F., Hao, W., Shen, Z., Konhauser, K. O., Alessi, D. S., <strong>Zhong, C.*</strong> (2023) In-situ growth of ZIF-8 nanocrystals on biochar for boron adsorption. Colloids and Surfaces A: Physicochemical and Engineering Aspects 657: 130504. (IF: 4.539, 物理化学, Q2)
+            Luo, M.,* Zhu, C., Chen, Q., Song, F., Hao, W., Shen, Z., Konhauser, K. O., Alessi, D. S., <strong>Zhong,
+            C.*</strong> (2023) In-situ growth of ZIF-8 nanocrystals on biochar for boron adsorption. Colloids and
+            Surfaces A: Physicochemical and Engineering Aspects 657: 130504. (IF: 4.539, 物理化学, Q2)
         </li>
     </ol>
 
@@ -846,13 +1425,20 @@
     </p>
     <ol start="10">
         <li style="margin-top:15px">
-            Wang, H., Chen, F.,* Li, D., Zhang, L., Luo, M., He, J., <strong>Zhong, C.*</strong> (2022) Viscosity and structure characterization of the 1-bromohexadecane-modified welan gum in the saline solution. Energy & Fuels 36: 6597-6605. (IF: 4.654, 化学工程, Q2)
+            Wang, H., Chen, F.,* Li, D., Zhang, L., Luo, M., He, J., <strong>Zhong, C.*</strong> (2022) Viscosity and
+            structure characterization of the 1-bromohexadecane-modified welan gum in the saline solution. Energy &
+            Fuels 36: 6597-6605. (IF: 4.654, 化学工程, Q2)
         </li>
         <li style="margin-top:15px">
-            <strong>Zhong, C.</strong>,* Nesbø, C. L., von Gunten, K., Zhang, Y., Shao, X., Jin, R., Konhauser, K. O., Goss, G. G., Martin, J. W., He, Y., Qian, P.-Y., Lanoil, B. D., and Alessi, D. S.* (2022) Complex impacts of hydraulic fracturing return fluids on soil microbial community respiration, structure, and functional potentials. Environmental Microbiology 24: 4108-4123. (IF: 5.476, 微生物学, Q2)
+            <strong>Zhong, C.</strong>,* Nesbø, C. L., von Gunten, K., Zhang, Y., Shao, X., Jin, R., Konhauser, K. O.,
+            Goss, G. G., Martin, J. W., He, Y., Qian, P.-Y., Lanoil, B. D., and Alessi, D. S.* (2022) Complex impacts of
+            hydraulic fracturing return fluids on soil microbial community respiration, structure, and functional
+            potentials. Environmental Microbiology 24: 4108-4123. (IF: 5.476, 微生物学, Q2)
         </li>
         <li style="margin-top:15px">
-            Liao, Z, Chen, F., Deng, Y., Wang, K., von Gunten, K., He, Y., and <strong>Zhong, C.*</strong> (2022) Organic weighting hydraulic fracturing fluid: complex interactions between formate salts, hydroxy carboxylate acid, and guar. SPE Journal SPE-209606-PA. (IF: 3.602, 石油工程, Q1, Top)
+            Liao, Z, Chen, F., Deng, Y., Wang, K., von Gunten, K., He, Y., and <strong>Zhong, C.*</strong> (2022)
+            Organic weighting hydraulic fracturing fluid: complex interactions between formate salts, hydroxy
+            carboxylate acid, and guar. SPE Journal SPE-209606-PA. (IF: 3.602, 石油工程, Q1, Top)
         </li>
     </ol>
 
@@ -861,13 +1447,21 @@
     </p>
     <ol start="13">
         <li style="margin-top:15px">
-            Lu, Y., Zhang, Y., <strong>Zhong, C.</strong>, Martin, J. W., Alessi, D. S., Goss, G. G., He, Y.* (2021) Suspended solids-associated toxicity of hydraulic fracturing flowback and produced water on early life stages of zebrafish (Danio rerio). Environmental Pollution 287: 117614. (IF: 9.988, 环境科学与生态学, Q1, Top)
+            Lu, Y., Zhang, Y., <strong>Zhong, C.</strong>, Martin, J. W., Alessi, D. S., Goss, G. G., He, Y.* (2021)
+            Suspended solids-associated toxicity of hydraulic fracturing flowback and produced water on early life
+            stages of zebrafish (Danio rerio). Environmental Pollution 287: 117614. (IF: 9.988, 环境科学与生态学, Q1,
+            Top)
         </li>
         <li style="margin-top:15px">
-            <strong>Zhong, C.</strong>,* Zolfaghari, A., Hou, D., Goss, G. G., Lanoil, B. D., Gehman, J., Tsang, D. C. W., He, Y., Alessi, D. S.* (2021) Comparison of the hydraulic fracturing water cycle in China and North America: A critical review. Environmental Science & Technology 55(11): 7167-7185. (IF: 11.357, 环境科学与生态学, Q1, Top)
+            <strong>Zhong, C.</strong>,* Zolfaghari, A., Hou, D., Goss, G. G., Lanoil, B. D., Gehman, J., Tsang, D. C.
+            W., He, Y., Alessi, D. S.* (2021) Comparison of the hydraulic fracturing water cycle in China and North
+            America: A critical review. Environmental Science & Technology 55(11): 7167-7185. (IF: 11.357, 环境科学与生态学,
+            Q1, Top)
         </li>
         <li style="margin-top:15px">
-            <strong>Zhong, C.</strong>, Kwan, Y. H., Goss, G. G., Alessi, D. S., Qian, P.-Y.* (2021) Hydraulic fracturing return fluids from offshore hydrocarbon extraction present new risks to marine ecosystems. Environmental Science & Technology 55(8): 4199-4201. (IF: 11.357, 环境科学与生态学, Q1, Top)
+            <strong>Zhong, C.</strong>, Kwan, Y. H., Goss, G. G., Alessi, D. S., Qian, P.-Y.* (2021) Hydraulic
+            fracturing return fluids from offshore hydrocarbon extraction present new risks to marine ecosystems.
+            Environmental Science & Technology 55(8): 4199-4201. (IF: 11.357, 环境科学与生态学, Q1, Top)
         </li>
     </ol>
 
@@ -876,7 +1470,9 @@
     </p>
     <ol start="16">
         <li style="margin-top:15px">
-            <strong>Zhong, C.</strong>, Nesbø, C. L., Goss, G. G., Lanoil, B. D., Alessi, D. S.* (2020) Response of aquatic microbial communities and bioindicator modelling of hydraulic fracturing flowback and produced water. FEMS Microbiology Ecology 96(5): fiaa068. (IF: 4.519, 微生物学, Q2)
+            <strong>Zhong, C.</strong>, Nesbø, C. L., Goss, G. G., Lanoil, B. D., Alessi, D. S.* (2020) Response of
+            aquatic microbial communities and bioindicator modelling of hydraulic fracturing flowback and produced
+            water. FEMS Microbiology Ecology 96(5): fiaa068. (IF: 4.519, 微生物学, Q2)
         </li>
     </ol>
 
@@ -885,7 +1481,10 @@
     </p>
     <ol start="17">
         <li style="margin-top:15px">
-            <strong>Zhong, C.</strong>, Li, J., Flynn, S. L., Nesbø, C. L., Sun, C., von Gunten, K., Lanoil, B. D., Goss, G. G., Martin, J. W., Alessi, D. S.* (2019) Temporal changes in microbial community composition and geochemistry in flowback and produced water from the Duvernay Formation. ACS Earth and Space Chemistry 3(6): 1047-1057. (IF: 3.556, 地球化学, Q2)
+            <strong>Zhong, C.</strong>, Li, J., Flynn, S. L., Nesbø, C. L., Sun, C., von Gunten, K., Lanoil, B. D.,
+            Goss, G. G., Martin, J. W., Alessi, D. S.* (2019) Temporal changes in microbial community composition and
+            geochemistry in flowback and produced water from the Duvernay Formation. ACS Earth and Space Chemistry 3(6):
+            1047-1057. (IF: 3.556, 地球化学, Q2)
         </li>
     </ol>
 
@@ -894,7 +1493,9 @@
     </p>
     <ol start="18">
         <li style="margin-top:15px">
-            von Gunten, K., Hamilton, S. M., <strong>Zhong, C.</strong>, Nesbø, C., Li, J., Muehlenbachs, K., Konhauser, K. O., Alessi, D. S.* (2018) Electron donor-driven bacterial and archaeal community patterns along forest ring edges in Ontario, Canada. Environmental Microbiology Reports 10(6): 663-672. (IF: 4.006, 环境科学, Q2)
+            von Gunten, K., Hamilton, S. M., <strong>Zhong, C.</strong>, Nesbø, C., Li, J., Muehlenbachs, K., Konhauser,
+            K. O., Alessi, D. S.* (2018) Electron donor-driven bacterial and archaeal community patterns along forest
+            ring edges in Ontario, Canada. Environmental Microbiology Reports 10(6): 663-672. (IF: 4.006, 环境科学, Q2)
         </li>
     </ol>
 
@@ -903,7 +1504,8 @@
     </p>
     <ol start="19">
         <li style="margin-top:15px">
-            <strong>钟诚 *</strong>，刘铉东，陈馥，韩玉婷，许园 (2013) 特殊岩性储层岩心与酸液适应性研究, 钻采工艺 36(1): 88-90.
+            <strong>钟诚 *</strong>，刘铉东，陈馥，韩玉婷，许园 (2013) 特殊岩性储层岩心与酸液适应性研究, 钻采工艺 36(1):
+            88-90.
         </li>
     </ol>
 
@@ -912,7 +1514,8 @@
     </p>
     <ol start="20">
         <li style="margin-top:15px">
-            <strong>钟诚 *</strong>，刘铉东，韩玉婷，许馨 (2012) 适应特殊岩性的酸液体系研究, 石油与天然气化工41(6): 597-599.
+            <strong>钟诚 *</strong>，刘铉东，韩玉婷，许馨 (2012) 适应特殊岩性的酸液体系研究, 石油与天然气化工41(6):
+            597-599.
         </li>
     </ol>
 
@@ -935,28 +1538,46 @@
     </div>
     <ol>
         <li style="margin-top:15px">
-            第九届土壤与地下水国际研讨会，专题九：地下水有机污染协同修复技术及案例，“高通量分子指纹在油矿区复杂有机污染风险管控与修复的协同应用研究”, 口头报告。
+            第九届土壤与地下水国际研讨会，专题九：地下水有机污染协同修复技术及案例，“高通量分子指纹在油矿区复杂有机污染风险管控与修复的协同应用研究”,
+            口头报告。
         </li>
         <li style="margin-top:15px">
-            Zhong, C., Nesbø, C. L., von Gunten, K., Zhang, Y., Shao, X., Jin, R., Konhauser, K. O., Goss, G. G., Martin, J. W., He, Y., Qian, P.-Y., Lanoil, B. D., and Alessi, D. S. Impacts of hydraulic fracturing flowback and produced water on soil microbial communities (oral presentation). Abstracts of Papers of the 262th American Chemical Society National Meeting, Atlanta, U.S., August 26, 2021. Paper ID: 3582660, 口头报告
+            Zhong, C., Nesbø, C. L., von Gunten, K., Zhang, Y., Shao, X., Jin, R., Konhauser, K. O., Goss, G. G.,
+            Martin, J. W., He, Y., Qian, P.-Y., Lanoil, B. D., and Alessi, D. S. Impacts of hydraulic fracturing
+            flowback and produced water on soil microbial communities (oral presentation). Abstracts of Papers of the
+            262th American Chemical Society National Meeting, Atlanta, U.S., August 26, 2021. Paper ID: 3582660, 口头报告
         </li>
         <li style="margin-top:15px">
-            Zhong, C., Nesbø, C. L., Lanoil, B. D., Alessi, D. S. Response of surface water microbial communities exposed to spills of flowback and produced water (oral presentation). Abstracts of Papers of the 258th American Chemical Society National Meeting, Vol. 258, San Diego, U.S., August 29, 2019, 口头报告
+            Zhong, C., Nesbø, C. L., Lanoil, B. D., Alessi, D. S. Response of surface water microbial communities
+            exposed to spills of flowback and produced water (oral presentation). Abstracts of Papers of the 258th
+            American Chemical Society National Meeting, Vol. 258, San Diego, U.S., August 29, 2019, 口头报告
         </li>
         <li style="margin-top:15px">
-            Zhong, C., Nesbø, C. L., Goss, G. G., Lanoil, B. D., Alessi, D. S. Sensitivity and response of aquatic microbial community to shale flowback and produced water contamination (poster). 2nd Geobiology Conference, Banff, Canada, June 11, 2019.
+            Zhong, C., Nesbø, C. L., Goss, G. G., Lanoil, B. D., Alessi, D. S. Sensitivity and response of aquatic
+            microbial community to shale flowback and produced water contamination (poster). 2nd Geobiology Conference,
+            Banff, Canada, June 11, 2019.
         </li>
         <li style="margin-top:15px">
-            Zhong, C., Li, J., Flynn, S. L., Nesbø, C. L., Sun, C., von Gunten, K., Lanoil, B. D., Goss, G. G., Martin, J. W., Alessi, D. S. Microbial community dynamics in flowback and produced water from unconventional hydrocarbon wells (oral presentation). Resources for Future Generations, Vancouver, Canada, June 18, 2018, 口头报告
+            Zhong, C., Li, J., Flynn, S. L., Nesbø, C. L., Sun, C., von Gunten, K., Lanoil, B. D., Goss, G. G., Martin,
+            J. W., Alessi, D. S. Microbial community dynamics in flowback and produced water from unconventional
+            hydrocarbon wells (oral presentation). Resources for Future Generations, Vancouver, Canada, June 18, 2018,
+            口头报告
         </li>
         <li style="margin-top:15px">
-            4th EIP Water Conference (Co-Chair: Innovation Water Product and Chinese Markets), Porto, Portugal, September 28, 2017.
+            4th EIP Water Conference (Co-Chair: Innovation Water Product and Chinese Markets), Porto, Portugal,
+            September 28, 2017.
         </li>
         <li style="margin-top:15px">
-            Zhong, C., Li, J., Flynn, S. L., Nesbø, C. L., Sun, C., von Gunten, K., Lanoil, B. D., Goss, G. G., Martin, J. W., Alessi, D. S. Microbial community dynamics in the hydraulic fracturing water cycle from two newly fractured shale gas wells in western Canada (poster). 1st Geobiology Conference Banff, Canada, June 14, 2017.
+            Zhong, C., Li, J., Flynn, S. L., Nesbø, C. L., Sun, C., von Gunten, K., Lanoil, B. D., Goss, G. G., Martin,
+            J. W., Alessi, D. S. Microbial community dynamics in the hydraulic fracturing water cycle from two newly
+            fractured shale gas wells in western Canada (poster). 1st Geobiology Conference Banff, Canada, June 14,
+            2017.
         </li>
         <li style="margin-top:15px">
-            Zhong, C., Li, J., Flynn, S. L., Nesbø, C. L., Lanoil, B. D., Goss, G. G., Alessi, D. S. Microbial community dynamics in the hydraulic fracturing water cycle of a newly fractured shale gas well in western Canada (oral presentation). Abstracts of Papers of the 253th American Chemical Society National Meeting, Vol. 253, San Francisco, U.S., April 7, 2017, 口头报告
+            Zhong, C., Li, J., Flynn, S. L., Nesbø, C. L., Lanoil, B. D., Goss, G. G., Alessi, D. S. Microbial community
+            dynamics in the hydraulic fracturing water cycle of a newly fractured shale gas well in western Canada (oral
+            presentation). Abstracts of Papers of the 253th American Chemical Society National Meeting, Vol. 253, San
+            Francisco, U.S., April 7, 2017, 口头报告
         </li>
     </ol>
 
@@ -972,6 +1593,7 @@
 
 </div>
 
+<!--二级页面 activities-->
 <div id="activities" class="content">
     <br>
     <div class="subtitle"> 钟诚课题组活动集合</div>
@@ -1004,6 +1626,7 @@
 
 </div>
 
+<!--二级页面 papers-->
 <div id="papers" class="content">
     <br>
     <div class="subtitle"> 钟诚课题组论文集合</div>
@@ -1163,6 +1786,8 @@
             document.querySelector("#activities").style.display = 'block';
         } else if (window.location.hash == '#papers') {
             document.getElementById("papers").style.display = 'block';
+        } else if (window.location.hash == '#en') {
+            document.querySelector("#en").style.display = 'block';
         } else {
             document.querySelector("#cn").style.display = 'block';
         }
@@ -1172,6 +1797,14 @@
                 content.style.display = 'none';
             });
             document.querySelector(target).style.display = 'block';
+            if ( target == '#en') {
+                document.querySelector('#cn-menu').style.display = 'none';
+                document.querySelector('#en-menu').style.display = 'block';
+            } else {
+                document.querySelector('#cn-menu').style.display = 'block';
+                document.querySelector('#en-menu').style.display = 'none';
+            }
         }
+
 </script>
 </html>
