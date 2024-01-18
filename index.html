@@ -1797,10 +1797,12 @@
                 content.style.display = 'none';
             });
             document.querySelector(target).style.display = 'block';
+
             if ( target == '#en') {
                 document.querySelector('#cn-menu').style.display = 'none';
                 document.querySelector('#en-menu').style.display = 'block';
-            } else {
+            }
+            if ( target == '#cn') {
                 document.querySelector('#cn-menu').style.display = 'block';
                 document.querySelector('#en-menu').style.display = 'none';
             }
