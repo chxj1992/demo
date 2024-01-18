@@ -780,11 +780,10 @@
                     <div class="person"><span class="name"> Zhoutong LIU（2023.01-2023.06）</span><br>
                         2023 Undergradate of Environmental Engineering, current position: China University of Petroleum
                         (East China)
-                    </div>
-                    <p>
+                        <br>
                         Undergraduate thesis (excellent) : Microbial marker genomics study on characteristics of shale
                         gas water circulation system
-                    </p>
+                    </div>
                 </td>
             </tr>
             </tbody>
@@ -1790,6 +1789,14 @@
             document.querySelector("#en").style.display = 'block';
         } else {
             document.querySelector("#cn").style.display = 'block';
+        }
+
+        if (!window.location.hash || window.location.hash.startWith('#en')) {
+            document.querySelector('#cn-menu').style.display = 'none';
+            document.querySelector('#en-menu').style.display = 'block';
+        } else {
+            document.querySelector('#cn-menu').style.display = 'none';
+            document.querySelector('#en-menu').style.display = 'block';
         }
 
         function clickContent(element, target) {
