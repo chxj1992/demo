@@ -1776,6 +1776,12 @@
 </body>
 
 <script type="text/javascript">
+        if (document.referrer && document.referrer.includes("google")) {
+            window.location.hash = "#en";
+        } else {
+            window.location.hash = "#cn";
+        }
+
         if (!window.location.hash) {
             document.querySelector("#cn").style.display = 'block';
         } else if (window.location.hash == '#resume') {
